@@ -1,0 +1,738 @@
+{
+  "shot_to_id": {
+    "<UNK>": 1,
+    "Backhand Serve": 2,
+    "Clear": 3,
+    "Cross Drop": 4,
+    "Drive": 5,
+    "Drop": 6,
+    "Fall": 7,
+    "Lift": 8,
+    "Long Defence": 9,
+    "Miss": 10,
+    "Net": 11,
+    "Net Kill": 12,
+    "Net Shot": 13,
+    "Out": 14,
+    "Serve": 15,
+    "Short Defence": 16,
+    "Smash": 17
+  },
+  "id_to_shot": {
+    "1": "<UNK>",
+    "2": "Backhand Serve",
+    "3": "Clear",
+    "4": "Cross Drop",
+    "5": "Drive",
+    "6": "Drop",
+    "7": "Fall",
+    "8": "Lift",
+    "9": "Long Defence",
+    "10": "Miss",
+    "11": "Net",
+    "12": "Net Kill",
+    "13": "Net Shot",
+    "14": "Out",
+    "15": "Serve",
+    "16": "Short Defence",
+    "17": "Smash"
+  },
+  "max_sequence_length": 61,
+  "seed": 42,
+  "encoder_type": "bilstm",
+  "next_shot_head_enabled": true,
+  "win_probability_calibration": {
+    "method": "temperature_scaling",
+    "temperature": 4.0,
+    "validation_log_loss_before": 0.734281,
+    "validation_log_loss_after": 0.697829
+  },
+  "min_recommendation_delta": 0.01,
+  "context_candidate_top_k": 6,
+  "max_context_size": 2,
+  "context_transition_stats": {
+    "0": {
+      "<START>": {
+        "Serve": 31,
+        "Lift": 191,
+        "Drop": 176,
+        "Net": 18,
+        "Drive": 89,
+        "Clear": 70,
+        "Fall": 31,
+        "Miss": 9,
+        "Smash": 91,
+        "Cross Drop": 8,
+        "Long Defence": 16,
+        "Short Defence": 9,
+        "Backhand Serve": 2,
+        "Net Shot": 24,
+        "Out": 3,
+        "Net Kill": 7
+      }
+    },
+    "1": {
+      "<START>": {
+        "Serve": 14,
+        "Lift": 16,
+        "Drive": 3,
+        "Drop": 11,
+        "Smash": 4,
+        "Long Defence": 3,
+        "Backhand Serve": 2,
+        "Clear": 4,
+        "Net Shot": 3,
+        "Out": 1
+      },
+      "Serve": {
+        "Lift": 15,
+        "Drive": 4,
+        "Clear": 5,
+        "Miss": 1,
+        "Smash": 3,
+        "Drop": 2,
+        "Net": 1
+      },
+      "Lift": {
+        "Drop": 60,
+        "Net": 6,
+        "Drive": 29,
+        "Clear": 17,
+        "Miss": 3,
+        "Lift": 24,
+        "Fall": 11,
+        "Smash": 23,
+        "Cross Drop": 4,
+        "Short Defence": 3,
+        "Long Defence": 6,
+        "Serve": 2,
+        "Net Shot": 2,
+        "Net Kill": 1
+      },
+      "Drop": {
+        "Lift": 60,
+        "Clear": 26,
+        "Net": 6,
+        "Drive": 16,
+        "Drop": 41,
+        "Smash": 20,
+        "Cross Drop": 1,
+        "Fall": 3,
+        "Serve": 3
+      },
+      "Drive": {
+        "Drive": 17,
+        "Clear": 5,
+        "Lift": 30,
+        "Fall": 4,
+        "Smash": 5,
+        "Drop": 15,
+        "Miss": 2,
+        "Short Defence": 2,
+        "Net Shot": 4,
+        "Long Defence": 1,
+        "Net": 3,
+        "Net Kill": 1
+      },
+      "Clear": {
+        "Drop": 21,
+        "Drive": 9,
+        "Lift": 11,
+        "Smash": 7,
+        "Cross Drop": 1,
+        "Fall": 8,
+        "Net": 1,
+        "Net Shot": 3,
+        "Short Defence": 2,
+        "Clear": 2,
+        "Serve": 4,
+        "Long Defence": 1
+      },
+      "Smash": {
+        "Lift": 21,
+        "Drop": 22,
+        "Smash": 8,
+        "Serve": 6,
+        "Drive": 8,
+        "Miss": 2,
+        "Cross Drop": 2,
+        "Fall": 3,
+        "Net Shot": 10,
+        "Short Defence": 1,
+        "Out": 2,
+        "Net Kill": 3,
+        "Long Defence": 1,
+        "Clear": 2
+      },
+      "Cross Drop": {
+        "Drop": 2,
+        "Smash": 4,
+        "Lift": 2
+      },
+      "Long Defence": {
+        "Fall": 2,
+        "Long Defence": 3,
+        "Drive": 1,
+        "Lift": 2,
+        "Smash": 4,
+        "Clear": 1,
+        "Net Shot": 1,
+        "Net": 1,
+        "Serve": 1
+      },
+      "Short Defence": {
+        "Drop": 1,
+        "Smash": 2,
+        "Short Defence": 1,
+        "Drive": 2,
+        "Clear": 2,
+        "Lift": 1
+      },
+      "Backhand Serve": {
+        "Net Shot": 1,
+        "Lift": 1
+      },
+      "Net Shot": {
+        "Lift": 5,
+        "Smash": 11,
+        "Clear": 5,
+        "Long Defence": 1,
+        "Net Kill": 1,
+        "Drop": 1
+      },
+      "Net Kill": {
+        "Net Kill": 1,
+        "Serve": 1,
+        "Lift": 3,
+        "Miss": 1,
+        "Clear": 1
+      }
+    },
+    "2": {
+      "<START>": {
+        "Serve": 14,
+        "Lift": 16,
+        "Drive": 3,
+        "Drop": 11,
+        "Smash": 4,
+        "Long Defence": 3,
+        "Backhand Serve": 2,
+        "Clear": 4,
+        "Net Shot": 3,
+        "Out": 1
+      },
+      "Serve": {
+        "Lift": 7,
+        "Drive": 3,
+        "Drop": 1,
+        "Smash": 1,
+        "Clear": 2
+      },
+      "Serve -> Lift": {
+        "Drop": 7,
+        "Lift": 2,
+        "Clear": 2,
+        "Drive": 3,
+        "Fall": 1
+      },
+      "Lift -> Drop": {
+        "Lift": 21,
+        "Clear": 7,
+        "Net": 3,
+        "Drive": 7,
+        "Smash": 8,
+        "Drop": 13,
+        "Serve": 1
+      },
+      "Drop -> Lift": {
+        "Net": 3,
+        "Drop": 24,
+        "Drive": 5,
+        "Smash": 9,
+        "Clear": 5,
+        "Cross Drop": 2,
+        "Lift": 11,
+        "Fall": 1
+      },
+      "Lift": {
+        "Drive": 6,
+        "Drop": 3,
+        "Short Defence": 1,
+        "Lift": 1,
+        "Smash": 1,
+        "Clear": 2,
+        "Serve": 1,
+        "Net Shot": 1
+      },
+      "Lift -> Drive": {
+        "Drive": 7,
+        "Lift": 7,
+        "Fall": 2,
+        "Smash": 5,
+        "Drop": 4,
+        "Short Defence": 1,
+        "Net Shot": 2,
+        "Clear": 1
+      },
+      "Drive -> Drive": {
+        "Clear": 2,
+        "Drive": 3,
+        "Lift": 8,
+        "Drop": 2,
+        "Short Defence": 1,
+        "Net Shot": 1
+      },
+      "Drive -> Clear": {
+        "Drop": 1,
+        "Fall": 1,
+        "Drive": 1,
+        "Clear": 1,
+        "Serve": 1
+      },
+      "Clear -> Drop": {
+        "Lift": 10,
+        "Drop": 3,
+        "Cross Drop": 1,
+        "Fall": 1,
+        "Smash": 2,
+        "Clear": 2,
+        "Serve": 1,
+        "Net": 1
+      },
+      "Drop -> Clear": {
+        "Drive": 3,
+        "Drop": 13,
+        "Smash": 1,
+        "Fall": 4,
+        "Lift": 3,
+        "Short Defence": 1,
+        "Serve": 1
+      },
+      "Clear -> Drive": {
+        "Lift": 2,
+        "Drop": 2,
+        "Drive": 1,
+        "Miss": 1,
+        "Clear": 1,
+        "Net": 1,
+        "Fall": 1
+      },
+      "Drive -> Lift": {
+        "Clear": 2,
+        "Drive": 5,
+        "Miss": 2,
+        "Lift": 2,
+        "Drop": 9,
+        "Smash": 4,
+        "Cross Drop": 1,
+        "Fall": 3,
+        "Long Defence": 1,
+        "Net Kill": 1
+      },
+      "Lift -> Clear": {
+        "Lift": 5,
+        "Cross Drop": 1,
+        "Drop": 3,
+        "Smash": 4,
+        "Fall": 1,
+        "Clear": 1,
+        "Serve": 1,
+        "Drive": 1
+      },
+      "Clear -> Lift": {
+        "Drive": 2,
+        "Fall": 3,
+        "Smash": 3,
+        "Net": 1,
+        "Drop": 1,
+        "Lift": 1
+      },
+      "Drive": {
+        "Lift": 1,
+        "Drive": 1,
+        "Drop": 1
+      },
+      "Lift -> Lift": {
+        "Lift": 5,
+        "Drop": 8,
+        "Drive": 2,
+        "Smash": 4,
+        "Fall": 1,
+        "Long Defence": 1,
+        "Clear": 1,
+        "Net": 1,
+        "Miss": 1
+      },
+      "Drop": {
+        "Drive": 3,
+        "Smash": 2,
+        "Drop": 5,
+        "Clear": 1
+      },
+      "Drop -> Drive": {
+        "Lift": 6,
+        "Miss": 1,
+        "Drop": 5,
+        "Drive": 3,
+        "Clear": 1
+      },
+      "Drive -> Smash": {
+        "Lift": 2,
+        "Serve": 1,
+        "Drop": 1,
+        "Drive": 1
+      },
+      "Smash -> Lift": {
+        "Drop": 6,
+        "Clear": 5,
+        "Cross Drop": 1,
+        "Fall": 1,
+        "Drive": 4,
+        "Serve": 1,
+        "Net": 1,
+        "Smash": 1,
+        "Long Defence": 1
+      },
+      "Drive -> Drop": {
+        "Lift": 5,
+        "Drive": 2,
+        "Clear": 4,
+        "Smash": 2,
+        "Drop": 2
+      },
+      "Serve -> Drive": {
+        "Lift": 3,
+        "Net Kill": 1
+      },
+      "Smash": {
+        "Drop": 2,
+        "Drive": 1,
+        "Lift": 1
+      },
+      "Smash -> Drop": {
+        "Drive": 2,
+        "Lift": 6,
+        "Clear": 4,
+        "Drop": 5,
+        "Smash": 3,
+        "Net": 1,
+        "Fall": 1
+      },
+      "Drop -> Drop": {
+        "Lift": 13,
+        "Smash": 2,
+        "Drop": 13,
+        "Drive": 2,
+        "Clear": 8,
+        "Fall": 1,
+        "Net": 1,
+        "Serve": 1
+      },
+      "Lift -> Smash": {
+        "Lift": 6,
+        "Smash": 5,
+        "Miss": 1,
+        "Drop": 3,
+        "Out": 2,
+        "Net Shot": 3,
+        "Drive": 1,
+        "Fall": 1,
+        "Serve": 1
+      },
+      "Smash -> Smash": {
+        "Drop": 3,
+        "Drive": 1,
+        "Lift": 2,
+        "Smash": 2
+      },
+      "Smash -> Serve": {
+        "Lift": 4,
+        "Clear": 2
+      },
+      "Drop -> Smash": {
+        "Drive": 3,
+        "Lift": 4,
+        "Serve": 2,
+        "Drop": 10,
+        "Cross Drop": 1
+      },
+      "Smash -> Drive": {
+        "Lift": 2,
+        "Drive": 2,
+        "Drop": 1,
+        "Long Defence": 1,
+        "Net": 2
+      },
+      "Clear -> Smash": {
+        "Serve": 2,
+        "Miss": 1,
+        "Drop": 1,
+        "Lift": 2,
+        "Clear": 1
+      },
+      "Serve -> Clear": {
+        "Drop": 4,
+        "Drive": 1
+      },
+      "Drop -> Cross Drop": {
+        "Drop": 1
+      },
+      "Cross Drop -> Drop": {
+        "Smash": 1,
+        "Lift": 1
+      },
+      "Clear -> Cross Drop": {
+        "Smash": 1
+      },
+      "Cross Drop -> Smash": {
+        "Drop": 1,
+        "Lift": 1,
+        "Cross Drop": 1,
+        "Fall": 1
+      },
+      "Lift -> Cross Drop": {
+        "Drop": 1,
+        "Smash": 1,
+        "Lift": 2
+      },
+      "Drop -> Serve": {
+        "Miss": 1,
+        "Drop": 1,
+        "Lift": 1
+      },
+      "Cross Drop -> Lift": {
+        "Drop": 1,
+        "Smash": 1
+      },
+      "Smash -> Cross Drop": {
+        "Smash": 2
+      },
+      "Long Defence": {
+        "Fall": 1,
+        "Long Defence": 1,
+        "Lift": 1
+      },
+      "Lift -> Short Defence": {
+        "Drop": 1,
+        "Smash": 1,
+        "Lift": 1
+      },
+      "Short Defence -> Drop": {
+        "Lift": 1
+      },
+      "Backhand Serve": {
+        "Net Shot": 1,
+        "Lift": 1
+      },
+      "Backhand Serve -> Net Shot": {
+        "Lift": 1
+      },
+      "Net Shot -> Lift": {
+        "Fall": 1,
+        "Lift": 1,
+        "Short Defence": 1,
+        "Long Defence": 1,
+        "Net Shot": 1
+      },
+      "Lift -> Long Defence": {
+        "Fall": 1,
+        "Smash": 2,
+        "Lift": 1,
+        "Long Defence": 1,
+        "Serve": 1
+      },
+      "Backhand Serve -> Lift": {
+        "Short Defence": 1
+      },
+      "Short Defence -> Smash": {
+        "Smash": 1,
+        "Net Shot": 1
+      },
+      "Drive -> Short Defence": {
+        "Smash": 1,
+        "Clear": 1
+      },
+      "Smash -> Net Shot": {
+        "Smash": 5,
+        "Clear": 3,
+        "Net Kill": 1,
+        "Lift": 1
+      },
+      "Net Shot -> Smash": {
+        "Short Defence": 1,
+        "Net Kill": 2,
+        "Net Shot": 4,
+        "Lift": 2,
+        "Long Defence": 1,
+        "Drive": 1
+      },
+      "Smash -> Short Defence": {
+        "Short Defence": 1
+      },
+      "Short Defence -> Short Defence": {
+        "Drive": 1
+      },
+      "Short Defence -> Drive": {
+        "Lift": 1,
+        "Fall": 1
+      },
+      "Clear": {
+        "Net": 1,
+        "Drive": 1,
+        "Fall": 1,
+        "Smash": 1
+      },
+      "Short Defence -> Clear": {
+        "Lift": 1,
+        "Net Shot": 1
+      },
+      "Long Defence -> Long Defence": {
+        "Drive": 1,
+        "Smash": 1,
+        "Net Shot": 1
+      },
+      "Long Defence -> Drive": {
+        "Net Shot": 1
+      },
+      "Drive -> Net Shot": {
+        "Lift": 1,
+        "Smash": 2,
+        "Long Defence": 1
+      },
+      "Smash -> Net Kill": {
+        "Net Kill": 1,
+        "Lift": 2
+      },
+      "Net Kill -> Net Kill": {
+        "Serve": 1
+      },
+      "Net Kill -> Serve": {
+        "Smash": 1
+      },
+      "Serve -> Smash": {
+        "Lift": 1,
+        "Drop": 1,
+        "Clear": 1
+      },
+      "Lift -> Serve": {
+        "Clear": 1,
+        "Lift": 1
+      },
+      "Long Defence -> Lift": {
+        "Drive": 1,
+        "Lift": 1
+      },
+      "Net Shot -> Clear": {
+        "Net Shot": 2,
+        "Long Defence": 1,
+        "Short Defence": 1,
+        "Serve": 1
+      },
+      "Clear -> Net Shot": {
+        "Lift": 1,
+        "Smash": 2
+      },
+      "Short Defence -> Lift": {
+        "Long Defence": 1
+      },
+      "Long Defence -> Smash": {
+        "Fall": 1,
+        "Net Shot": 2,
+        "Net Kill": 1
+      },
+      "Net Shot": {
+        "Lift": 1,
+        "Smash": 1,
+        "Clear": 1
+      },
+      "Smash -> Long Defence": {
+        "Smash": 1
+      },
+      "Net Kill -> Lift": {
+        "Drop": 1,
+        "Drive": 1,
+        "Long Defence": 1
+      },
+      "Clear -> Short Defence": {
+        "Drive": 1,
+        "Clear": 1
+      },
+      "Drive -> Long Defence": {
+        "Clear": 1
+      },
+      "Long Defence -> Clear": {
+        "Fall": 1
+      },
+      "Net Shot -> Long Defence": {
+        "Long Defence": 1
+      },
+      "Net Shot -> Net Kill": {
+        "Miss": 1
+      },
+      "Serve -> Drop": {
+        "Lift": 2
+      },
+      "Clear -> Clear": {
+        "Drive": 2
+      },
+      "Clear -> Serve": {
+        "Drive": 1,
+        "Lift": 1,
+        "Net": 1,
+        "Smash": 1
+      },
+      "Drive -> Net Kill": {
+        "Clear": 1
+      },
+      "Net Kill -> Clear": {
+        "Lift": 1
+      },
+      "Lift -> Net Shot": {
+        "Drop": 1,
+        "Smash": 1
+      },
+      "Net Shot -> Drop": {
+        "Lift": 1
+      },
+      "Long Defence -> Net Shot": {
+        "Clear": 1
+      },
+      "Clear -> Long Defence": {
+        "Net": 1
+      },
+      "Lift -> Net Kill": {
+        "Lift": 1
+      },
+      "Long Defence -> Serve": {
+        "Lift": 1
+      },
+      "Smash -> Clear": {
+        "Lift": 1,
+        "Smash": 1
+      }
+    }
+  },
+  "cluster_name_map": {
+    "0": "Defensive",
+    "1": "Aggressive",
+    "2": "Balanced"
+  },
+  "candidate_shots": [
+    "Backhand Serve",
+    "Clear",
+    "Cross Drop",
+    "Drive",
+    "Drop",
+    "Fall",
+    "Lift",
+    "Long Defence",
+    "Miss",
+    "Net",
+    "Net Kill",
+    "Net Shot",
+    "Out",
+    "Serve",
+    "Short Defence",
+    "Smash"
+  ]
+}

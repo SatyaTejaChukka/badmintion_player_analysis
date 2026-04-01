@@ -1,0 +1,17 @@
+RallyId,ShotTypes,Player1Won,predicted_probability,predicted_label
+8_17,"Lift, Drive, Drop, Drop, Drop, Clear, Drop, Lift, Lift, Fall",1.0,0.5075,1
+26_6,"Backhand Serve, Net Shot, Lift, Fall",1.0,0.5047,1
+85_1,"Serve, Lift, Lift, Clear, Serve, Drive, Net Kill, Clear, Lift, Fall",1.0,0.5051,1
+29_4,"Serve, Drop, Lift, Smash, Lift, Clear, Clear, Drive, Clear, Drive, Net",0.0,0.5101,1
+26_5,"Lift, Short Defence, Drop, Lift, Fall",1.0,0.5056,1
+8_10,"Drop, Drive, Lift, Clear, Lift, Smash, Smash, Drop, Net",0.0,0.5097,1
+85_2,"Net Shot, Smash, Net Shot, Lift, Net Shot, Drop, Lift, Lift, Net",1.0,0.5052,1
+111_1,"Serve, Smash, Drop, Drive, Clear, Clear, Drive, Lift, Drop, Drive, Drive, Lift, Drop, Net",0.0,0.5104,1
+5_7,"Serve, Drive, Lift, Miss",0.0,0.5071,1
+27_11,"Smash, Drive, Long Defence, Clear, Fall",0.0,0.5071,1
+26_7,"Drive, Drive, Lift, Long Defence, Fall",1.0,0.5066,1
+85_5,"Lift, Net Shot, Smash, Lift, Long Defence, Long Defence, Net Shot, Clear, Long Defence, Net",1.0,0.5075,1
+27_8,"Lift, Drive, Lift, Lift, Drive, Lift, Drive, Clear, Fall",1.0,0.5071,1
+27_9,"Net Shot, Lift, Long Defence, Lift, Lift, Lift, Lift, Long Defence, Smash, Net Shot, Clear, Net Shot, Smash, Lift, Net",1.0,0.5055,1
+111_10,"Drop, Drop, Drop, Serve, Lift, Drop, Clear, Drop, Lift, Lift, Drop, Clear, Fall",0.0,0.5091,1
+5_8,"Lift, Drive, Drop, Drive, Miss",0.0,0.5096,1

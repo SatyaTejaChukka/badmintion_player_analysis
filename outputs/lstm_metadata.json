@@ -1,0 +1,22 @@
+{
+  "shot_to_id": {
+    "Backhand Serve": 1,
+    "Clear": 2,
+    "Cross Drop": 3,
+    "Drive": 4,
+    "Drop": 5,
+    "Fall": 6,
+    "Lift": 7,
+    "Long Defence": 8,
+    "Miss": 9,
+    "Net": 10,
+    "Net Kill": 11,
+    "Net Shot": 12,
+    "Out": 13,
+    "Serve": 14,
+    "Short Defence": 15,
+    "Smash": 16
+  },
+  "max_sequence_length": 61,
+  "seed": 42
+}

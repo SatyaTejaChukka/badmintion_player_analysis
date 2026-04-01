@@ -1,0 +1,776 @@
+RallyId,Player1Won,dataset_split,position,shot,prefix_sequence,win_probability_after_shot,delta_vs_previous_shot,cumulative_delta_vs_first_shot
+5_1,0,validation,1,Serve,Serve,0.4471,0.0,0.0
+5_1,0,validation,2,Lift,Serve -> Lift,0.4461,-0.001,-0.001
+5_1,0,validation,3,Drop,Serve -> Lift -> Drop,0.4452,-0.0009,-0.0019
+5_1,0,validation,4,Lift,Serve -> Lift -> Drop -> Lift,0.4438,-0.0015,-0.0034
+5_1,0,validation,5,Net,Serve -> Lift -> Drop -> Lift -> Net,0.4403,-0.0035,-0.0068
+5_2,0,train,1,Lift,Lift,0.4788,0.0,0.0
+5_2,0,train,2,Drive,Lift -> Drive,0.4645,-0.0143,-0.0143
+5_2,0,train,3,Drive,Lift -> Drive -> Drive,0.4549,-0.0095,-0.0239
+5_2,0,train,4,Clear,Lift -> Drive -> Drive -> Clear,0.4724,0.0174,-0.0065
+5_2,0,train,5,Drop,Lift -> Drive -> Drive -> Clear -> Drop,0.4699,-0.0024,-0.0089
+5_2,0,train,6,Lift,Lift -> Drive -> Drive -> Clear -> Drop -> Lift,0.4682,-0.0017,-0.0106
+5_2,0,train,7,Drop,Lift -> Drive -> Drive -> Clear -> Drop -> Lift -> Drop,0.4706,0.0024,-0.0082
+5_2,0,train,8,Clear,Lift -> Drive -> Drive -> Clear -> Drop -> Lift -> Drop -> Clear,0.4788,0.0082,-0.0
+5_2,0,train,9,Drive,Lift -> Drive -> Drive -> Clear -> Drop -> Lift -> Drop -> Clear -> Drive,0.4774,-0.0014,-0.0014
+5_2,0,train,10,Lift,Lift -> Drive -> Drive -> Clear -> Drop -> Lift -> Drop -> Clear -> Drive -> Lift,0.4805,0.0031,0.0017
+5_2,0,train,11,Clear,Lift -> Drive -> Drive -> Clear -> Drop -> Lift -> Drop -> Clear -> Drive -> Lift -> Clear,0.4853,0.0048,0.0065
+5_2,0,train,12,Lift,Lift -> Drive -> Drive -> Clear -> Drop -> Lift -> Drop -> Clear -> Drive -> Lift -> Clear -> Lift,0.4888,0.0035,0.01
+5_2,0,train,13,Drive,Lift -> Drive -> Drive -> Clear -> Drop -> Lift -> Drop -> Clear -> Drive -> Lift -> Clear -> Lift -> Drive,0.4905,0.0017,0.0117
+5_2,0,train,14,Lift,Lift -> Drive -> Drive -> Clear -> Drop -> Lift -> Drop -> Clear -> Drive -> Lift -> Clear -> Lift -> Drive -> Lift,0.4939,0.0033,0.015
+5_2,0,train,15,Drive,Lift -> Drive -> Drive -> Clear -> Drop -> Lift -> Drop -> Clear -> Drive -> Lift -> Clear -> Lift -> Drive -> Lift -> Drive,0.4956,0.0018,0.0168
+5_2,0,train,16,Fall,Lift -> Drive -> Drive -> Clear -> Drop -> Lift -> Drop -> Clear -> Drive -> Lift -> Clear -> Lift -> Drive -> Lift -> Drive -> Fall,0.4976,0.0019,0.0187
+5_3,0,train,1,Drive,Drive,0.4736,0.0,0.0
+5_3,0,train,2,Lift,Drive -> Lift,0.4654,-0.0082,-0.0082
+5_3,0,train,3,Miss,Drive -> Lift -> Miss,0.4615,-0.0039,-0.0121
+5_4,0,train,1,Serve,Serve,0.4471,0.0,0.0
+5_4,0,train,2,Lift,Serve -> Lift,0.4461,-0.001,-0.001
+5_4,0,train,3,Lift,Serve -> Lift -> Lift,0.4435,-0.0026,-0.0036
+5_4,0,train,4,Lift,Serve -> Lift -> Lift -> Lift,0.4423,-0.0012,-0.0048
+5_4,0,train,5,Lift,Serve -> Lift -> Lift -> Lift -> Lift,0.4432,0.0009,-0.0039
+5_4,0,train,6,Drop,Serve -> Lift -> Lift -> Lift -> Lift -> Drop,0.4476,0.0044,0.0005
+5_4,0,train,7,Net,Serve -> Lift -> Lift -> Lift -> Lift -> Drop -> Net,0.4438,-0.0038,-0.0033
+5_5,0,train,1,Drop,Drop,0.4822,0.0,0.0
+5_5,0,train,2,Drive,Drop -> Drive,0.4653,-0.0169,-0.0169
+5_5,0,train,3,Lift,Drop -> Drive -> Lift,0.4596,-0.0057,-0.0226
+5_5,0,train,4,Lift,Drop -> Drive -> Lift -> Lift,0.4561,-0.0035,-0.0261
+5_5,0,train,5,Drive,Drop -> Drive -> Lift -> Lift -> Drive,0.4515,-0.0046,-0.0307
+5_5,0,train,6,Smash,Drop -> Drive -> Lift -> Lift -> Drive -> Smash,0.4518,0.0003,-0.0304
+5_5,0,train,7,Lift,Drop -> Drive -> Lift -> Lift -> Drive -> Smash -> Lift,0.4546,0.0028,-0.0276
+5_5,0,train,8,Drop,Drop -> Drive -> Lift -> Lift -> Drive -> Smash -> Lift -> Drop,0.4603,0.0057,-0.0219
+5_5,0,train,9,Clear,Drop -> Drive -> Lift -> Lift -> Drive -> Smash -> Lift -> Drop -> Clear,0.4686,0.0083,-0.0136
+5_5,0,train,10,Drive,Drop -> Drive -> Lift -> Lift -> Drive -> Smash -> Lift -> Drop -> Clear -> Drive,0.4695,0.001,-0.0127
+5_5,0,train,11,Drop,Drop -> Drive -> Lift -> Lift -> Drive -> Smash -> Lift -> Drop -> Clear -> Drive -> Drop,0.4754,0.0058,-0.0068
+5_5,0,train,12,Lift,Drop -> Drive -> Lift -> Lift -> Drive -> Smash -> Lift -> Drop -> Clear -> Drive -> Drop -> Lift,0.4794,0.004,-0.0028
+5_5,0,train,13,Drive,Drop -> Drive -> Lift -> Lift -> Drive -> Smash -> Lift -> Drop -> Clear -> Drive -> Drop -> Lift -> Drive,0.4813,0.0019,-0.0009
+5_5,0,train,14,Fall,Drop -> Drive -> Lift -> Lift -> Drive -> Smash -> Lift -> Drop -> Clear -> Drive -> Drop -> Lift -> Drive -> Fall,0.4872,0.0059,0.005
+5_6,0,train,1,Serve,Serve,0.4471,0.0,0.0
+5_6,0,train,2,Lift,Serve -> Lift,0.4461,-0.001,-0.001
+5_6,0,train,3,Clear,Serve -> Lift -> Clear,0.473,0.0269,0.0259
+5_6,0,train,4,Lift,Serve -> Lift -> Clear -> Lift,0.4645,-0.0085,0.0174
+5_6,0,train,5,Fall,Serve -> Lift -> Clear -> Lift -> Fall,0.5117,0.0472,0.0646
+5_7,0,test,1,Serve,Serve,0.4471,0.0,0.0
+5_7,0,test,2,Drive,Serve -> Drive,0.4421,-0.005,-0.005
+5_7,0,test,3,Lift,Serve -> Drive -> Lift,0.4403,-0.0019,-0.0069
+5_7,0,test,4,Miss,Serve -> Drive -> Lift -> Miss,0.4417,0.0014,-0.0055
+5_8,0,test,1,Lift,Lift,0.4788,0.0,0.0
+5_8,0,test,2,Drive,Lift -> Drive,0.4645,-0.0143,-0.0143
+5_8,0,test,3,Drop,Lift -> Drive -> Drop,0.4605,-0.004,-0.0184
+5_8,0,test,4,Drive,Lift -> Drive -> Drop -> Drive,0.4526,-0.0079,-0.0262
+5_8,0,test,5,Miss,Lift -> Drive -> Drop -> Drive -> Miss,0.4538,0.0013,-0.025
+5_9,1,train,1,Smash,Smash,0.4841,0.0,0.0
+5_9,1,train,2,Drop,Smash -> Drop,0.4736,-0.0105,-0.0105
+5_9,1,train,3,Drive,Smash -> Drop -> Drive,0.4617,-0.0119,-0.0224
+5_9,1,train,4,Lift,Smash -> Drop -> Drive -> Lift,0.4576,-0.0041,-0.0265
+5_9,1,train,5,Drop,Smash -> Drop -> Drive -> Lift -> Drop,0.4579,0.0003,-0.0262
+5_9,1,train,6,Drive,Smash -> Drop -> Drive -> Lift -> Drop -> Drive,0.4549,-0.0031,-0.0292
+5_9,1,train,7,Drop,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop,0.4592,0.0044,-0.0248
+5_9,1,train,8,Clear,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear,0.4683,0.009,-0.0158
+5_9,1,train,9,Drop,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop,0.473,0.0048,-0.0111
+5_9,1,train,10,Drop,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop,0.4782,0.0052,-0.0059
+5_9,1,train,11,Lift,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift,0.4818,0.0036,-0.0023
+5_9,1,train,12,Drive,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive,0.4833,0.0015,-0.0008
+5_9,1,train,13,Drive,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive,0.485,0.0017,0.0009
+5_9,1,train,14,Drive,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive,0.4868,0.0018,0.0027
+5_9,1,train,15,Lift,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift,0.4898,0.003,0.0057
+5_9,1,train,16,Smash,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash,0.491,0.0012,0.0069
+5_9,1,train,17,Lift,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift,0.4933,0.0024,0.0092
+5_9,1,train,18,Drop,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop,0.4961,0.0028,0.0121
+5_9,1,train,19,Lift,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift,0.4978,0.0017,0.0137
+5_9,1,train,20,Smash,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash,0.4983,0.0005,0.0142
+5_9,1,train,21,Smash,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash -> Smash,0.4987,0.0004,0.0146
+5_9,1,train,22,Drop,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash -> Smash -> Drop,0.5,0.0013,0.0159
+5_9,1,train,23,Lift,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash -> Smash -> Drop -> Lift,0.5007,0.0006,0.0166
+5_9,1,train,24,Drive,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash -> Smash -> Drop -> Lift -> Drive,0.5007,0.0001,0.0167
+5_9,1,train,25,Smash,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash -> Smash -> Drop -> Lift -> Drive -> Smash,0.5007,-0.0001,0.0166
+5_9,1,train,26,Serve,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash -> Smash -> Drop -> Lift -> Drive -> Smash -> Serve,0.5021,0.0014,0.018
+5_9,1,train,27,Lift,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash -> Smash -> Drop -> Lift -> Drive -> Smash -> Serve -> Lift,0.5022,0.0001,0.0181
+5_9,1,train,28,Drop,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash -> Smash -> Drop -> Lift -> Drive -> Smash -> Serve -> Lift -> Drop,0.5027,0.0005,0.0186
+5_9,1,train,29,Smash,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash -> Smash -> Drop -> Lift -> Drive -> Smash -> Serve -> Lift -> Drop -> Smash,0.5025,-0.0002,0.0184
+5_9,1,train,30,Drive,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash -> Smash -> Drop -> Lift -> Drive -> Smash -> Serve -> Lift -> Drop -> Smash -> Drive,0.5023,-0.0002,0.0182
+5_9,1,train,31,Lift,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash -> Smash -> Drop -> Lift -> Drive -> Smash -> Serve -> Lift -> Drop -> Smash -> Drive -> Lift,0.5025,0.0002,0.0184
+5_9,1,train,32,Drive,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash -> Smash -> Drop -> Lift -> Drive -> Smash -> Serve -> Lift -> Drop -> Smash -> Drive -> Lift -> Drive,0.5024,-0.0002,0.0183
+5_9,1,train,33,Drive,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash -> Smash -> Drop -> Lift -> Drive -> Smash -> Serve -> Lift -> Drop -> Smash -> Drive -> Lift -> Drive -> Drive,0.5022,-0.0002,0.0181
+5_9,1,train,34,Lift,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash -> Smash -> Drop -> Lift -> Drive -> Smash -> Serve -> Lift -> Drop -> Smash -> Drive -> Lift -> Drive -> Drive -> Lift,0.5024,0.0002,0.0183
+5_9,1,train,35,Smash,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash -> Smash -> Drop -> Lift -> Drive -> Smash -> Serve -> Lift -> Drop -> Smash -> Drive -> Lift -> Drive -> Drive -> Lift -> Smash,0.5022,-0.0002,0.0181
+5_9,1,train,36,Miss,Smash -> Drop -> Drive -> Lift -> Drop -> Drive -> Drop -> Clear -> Drop -> Drop -> Lift -> Drive -> Drive -> Drive -> Lift -> Smash -> Lift -> Drop -> Lift -> Smash -> Smash -> Drop -> Lift -> Drive -> Smash -> Serve -> Lift -> Drop -> Smash -> Drive -> Lift -> Drive -> Drive -> Lift -> Smash -> Miss,0.5025,0.0002,0.0184
+6_1,1,train,1,Serve,Serve,0.4471,0.0,0.0
+6_1,1,train,2,Lift,Serve -> Lift,0.4461,-0.001,-0.001
+6_1,1,train,3,Drop,Serve -> Lift -> Drop,0.4452,-0.0009,-0.0019
+6_1,1,train,4,Drive,Serve -> Lift -> Drop -> Drive,0.4397,-0.0055,-0.0074
+6_1,1,train,5,Lift,Serve -> Lift -> Drop -> Drive -> Lift,0.441,0.0014,-0.0061
+6_1,1,train,6,Drive,Serve -> Lift -> Drop -> Drive -> Lift -> Drive,0.4406,-0.0005,-0.0066
+6_1,1,train,7,Smash,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash,0.4433,0.0027,-0.0038
+6_1,1,train,8,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop,0.4501,0.0068,0.0029
+6_1,1,train,9,Clear,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear,0.4603,0.0102,0.0132
+6_1,1,train,10,Smash,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash,0.4626,0.0023,0.0155
+6_1,1,train,11,Serve,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve,0.4725,0.01,0.0254
+6_1,1,train,12,Clear,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear,0.4773,0.0047,0.0302
+6_1,1,train,13,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop,0.4821,0.0049,0.035
+6_1,1,train,14,Lift,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift,0.4852,0.0031,0.0381
+6_1,1,train,15,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop,0.4893,0.0041,0.0422
+6_1,1,train,16,Drive,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive,0.4908,0.0014,0.0436
+6_1,1,train,17,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop,0.4941,0.0034,0.047
+6_1,1,train,18,Lift,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift,0.4963,0.0021,0.0491
+6_1,1,train,19,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop,0.4989,0.0027,0.0518
+6_1,1,train,20,Drive,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive,0.4998,0.0009,0.0527
+6_1,1,train,21,Drive,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive,0.5006,0.0008,0.0535
+6_1,1,train,22,Lift,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift,0.5018,0.0011,0.0546
+6_1,1,train,23,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop,0.5032,0.0015,0.0561
+6_1,1,train,24,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop,0.5044,0.0012,0.0573
+6_1,1,train,25,Lift,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift,0.5051,0.0006,0.0579
+6_1,1,train,26,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop,0.5059,0.0009,0.0588
+6_1,1,train,27,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop,0.5067,0.0007,0.0595
+6_1,1,train,28,Lift,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift,0.507,0.0003,0.0598
+6_1,1,train,29,Drive,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive,0.5069,-0.0001,0.0597
+6_1,1,train,30,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop,0.5073,0.0005,0.0602
+6_1,1,train,31,Clear,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear,0.5079,0.0006,0.0608
+6_1,1,train,32,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop,0.5084,0.0005,0.0613
+6_1,1,train,33,Cross Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop,0.5092,0.0008,0.0621
+6_1,1,train,34,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop,0.5097,0.0005,0.0626
+6_1,1,train,35,Smash,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash,0.5095,-0.0002,0.0624
+6_1,1,train,36,Drive,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive,0.5093,-0.0002,0.0622
+6_1,1,train,37,Drive,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive,0.5092,-0.0001,0.0621
+6_1,1,train,38,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop,0.51,0.0008,0.0628
+6_1,1,train,39,Smash,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash,0.5099,-0.0001,0.0628
+6_1,1,train,40,Lift,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift,0.5104,0.0005,0.0633
+6_1,1,train,41,Clear,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear,0.5107,0.0003,0.0636
+6_1,1,train,42,Cross Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop,0.5111,0.0004,0.064
+6_1,1,train,43,Smash,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash,0.5111,-0.0,0.064
+6_1,1,train,44,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop,0.5118,0.0007,0.0646
+6_1,1,train,45,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop,0.5124,0.0007,0.0653
+6_1,1,train,46,Smash,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop -> Smash,0.5123,-0.0001,0.0652
+6_1,1,train,47,Serve,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop -> Smash -> Serve,0.514,0.0017,0.0669
+6_1,1,train,48,Lift,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop -> Smash -> Serve -> Lift,0.5142,0.0002,0.0671
+6_1,1,train,49,Clear,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop -> Smash -> Serve -> Lift -> Clear,0.5142,-0.0,0.0671
+6_1,1,train,50,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop -> Smash -> Serve -> Lift -> Clear -> Drop,0.5148,0.0006,0.0677
+6_1,1,train,51,Lift,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop -> Smash -> Serve -> Lift -> Clear -> Drop -> Lift,0.5151,0.0003,0.068
+6_1,1,train,52,Drive,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop -> Smash -> Serve -> Lift -> Clear -> Drop -> Lift -> Drive,0.5151,0.0,0.068
+6_1,1,train,53,Lift,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop -> Smash -> Serve -> Lift -> Clear -> Drop -> Lift -> Drive -> Lift,0.5153,0.0002,0.0682
+6_1,1,train,54,Cross Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop -> Smash -> Serve -> Lift -> Clear -> Drop -> Lift -> Drive -> Lift -> Cross Drop,0.5152,-0.0001,0.0681
+6_1,1,train,55,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop -> Smash -> Serve -> Lift -> Clear -> Drop -> Lift -> Drive -> Lift -> Cross Drop -> Drop,0.5155,0.0003,0.0684
+6_1,1,train,56,Lift,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop -> Smash -> Serve -> Lift -> Clear -> Drop -> Lift -> Drive -> Lift -> Cross Drop -> Drop -> Lift,0.5156,0.0001,0.0685
+6_1,1,train,57,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop -> Smash -> Serve -> Lift -> Clear -> Drop -> Lift -> Drive -> Lift -> Cross Drop -> Drop -> Lift -> Drop,0.5159,0.0003,0.0687
+6_1,1,train,58,Lift,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop -> Smash -> Serve -> Lift -> Clear -> Drop -> Lift -> Drive -> Lift -> Cross Drop -> Drop -> Lift -> Drop -> Lift,0.516,0.0001,0.0688
+6_1,1,train,59,Clear,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop -> Smash -> Serve -> Lift -> Clear -> Drop -> Lift -> Drive -> Lift -> Cross Drop -> Drop -> Lift -> Drop -> Lift -> Clear,0.5161,0.0002,0.069
+6_1,1,train,60,Drop,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop -> Smash -> Serve -> Lift -> Clear -> Drop -> Lift -> Drive -> Lift -> Cross Drop -> Drop -> Lift -> Drop -> Lift -> Clear -> Drop,0.5164,0.0003,0.0693
+6_1,1,train,61,Fall,Serve -> Lift -> Drop -> Drive -> Lift -> Drive -> Smash -> Drop -> Clear -> Smash -> Serve -> Clear -> Drop -> Lift -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Drop -> Lift -> Drop -> Drop -> Lift -> Drive -> Drop -> Clear -> Drop -> Cross Drop -> Drop -> Smash -> Drive -> Drive -> Drop -> Smash -> Lift -> Clear -> Cross Drop -> Smash -> Drop -> Drop -> Smash -> Serve -> Lift -> Clear -> Drop -> Lift -> Drive -> Lift -> Cross Drop -> Drop -> Lift -> Drop -> Lift -> Clear -> Drop -> Fall,0.5175,0.0011,0.0704
+6_2,0,train,1,Serve,Serve,0.4471,0.0,0.0
+6_2,0,train,2,Lift,Serve -> Lift,0.4461,-0.001,-0.001
+6_2,0,train,3,Drop,Serve -> Lift -> Drop,0.4452,-0.0009,-0.0019
+6_2,0,train,4,Lift,Serve -> Lift -> Drop -> Lift,0.4438,-0.0015,-0.0034
+6_2,0,train,5,Drop,Serve -> Lift -> Drop -> Lift -> Drop,0.4461,0.0024,-0.001
+6_2,0,train,6,Net,Serve -> Lift -> Drop -> Lift -> Drop -> Net,0.4423,-0.0038,-0.0048
+6_3,1,train,1,Drop,Drop,0.4822,0.0,0.0
+6_3,1,train,2,Smash,Drop -> Smash,0.4726,-0.0096,-0.0096
+6_3,1,train,3,Lift,Drop -> Smash -> Lift,0.4652,-0.0074,-0.017
+6_3,1,train,4,Cross Drop,Drop -> Smash -> Lift -> Cross Drop,0.4873,0.0221,0.0051
+6_3,1,train,5,Smash,Drop -> Smash -> Lift -> Cross Drop -> Smash,0.4797,-0.0076,-0.0025
+6_3,1,train,6,Lift,Drop -> Smash -> Lift -> Cross Drop -> Smash -> Lift,0.4763,-0.0034,-0.0059
+6_3,1,train,7,Drop,Drop -> Smash -> Lift -> Cross Drop -> Smash -> Lift -> Drop,0.4784,0.0022,-0.0038
+6_3,1,train,8,Drop,Drop -> Smash -> Lift -> Cross Drop -> Smash -> Lift -> Drop -> Drop,0.4822,0.0038,0.0
+6_3,1,train,9,Lift,Drop -> Smash -> Lift -> Cross Drop -> Smash -> Lift -> Drop -> Drop -> Lift,0.4848,0.0026,0.0026
+6_3,1,train,10,Drop,Drop -> Smash -> Lift -> Cross Drop -> Smash -> Lift -> Drop -> Drop -> Lift -> Drop,0.4896,0.0048,0.0074
+6_3,1,train,11,Serve,Drop -> Smash -> Lift -> Cross Drop -> Smash -> Lift -> Drop -> Drop -> Lift -> Drop -> Serve,0.4993,0.0096,0.0171
+6_3,1,train,12,Miss,Drop -> Smash -> Lift -> Cross Drop -> Smash -> Lift -> Drop -> Drop -> Lift -> Drop -> Serve -> Miss,0.501,0.0017,0.0188
+6_4,0,train,1,Drop,Drop,0.4822,0.0,0.0
+6_4,0,train,2,Smash,Drop -> Smash,0.4726,-0.0096,-0.0096
+6_4,0,train,3,Drop,Drop -> Smash -> Drop,0.467,-0.0056,-0.0152
+6_4,0,train,4,Lift,Drop -> Smash -> Drop -> Lift,0.4624,-0.0046,-0.0198
+6_4,0,train,5,Drop,Drop -> Smash -> Drop -> Lift -> Drop,0.4625,0.0001,-0.0197
+6_4,0,train,6,Lift,Drop -> Smash -> Drop -> Lift -> Drop -> Lift,0.4623,-0.0002,-0.0199
+6_4,0,train,7,Smash,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash,0.4625,0.0002,-0.0197
+6_4,0,train,8,Lift,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift,0.4658,0.0033,-0.0164
+6_4,0,train,9,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop,0.4717,0.0059,-0.0105
+6_4,0,train,10,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop,0.4776,0.0059,-0.0046
+6_4,0,train,11,Smash,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash,0.4791,0.0015,-0.0031
+6_4,0,train,12,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop,0.4844,0.0052,0.0022
+6_4,0,train,13,Clear,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear,0.4879,0.0036,0.0057
+6_4,0,train,14,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop,0.4921,0.0041,0.0099
+6_4,0,train,15,Smash,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash,0.4932,0.0012,0.011
+6_4,0,train,16,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop,0.4966,0.0034,0.0144
+6_4,0,train,17,Smash,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash,0.4974,0.0008,0.0152
+6_4,0,train,18,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop,0.5001,0.0026,0.0179
+6_4,0,train,19,Smash,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash,0.5006,0.0006,0.0184
+6_4,0,train,20,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop,0.5027,0.0021,0.0205
+6_4,0,train,21,Clear,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear,0.5038,0.001,0.0216
+6_4,0,train,22,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop,0.5054,0.0016,0.0232
+6_4,0,train,23,Lift,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift,0.5064,0.001,0.0242
+6_4,0,train,24,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop,0.5077,0.0013,0.0255
+6_4,0,train,25,Lift,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift,0.5084,0.0007,0.0262
+6_4,0,train,26,Cross Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop,0.5087,0.0003,0.0265
+6_4,0,train,27,Lift,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift,0.5092,0.0005,0.027
+6_4,0,train,28,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop,0.5102,0.0009,0.028
+6_4,0,train,29,Smash,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash,0.5102,-0.0,0.028
+6_4,0,train,30,Lift,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift,0.5106,0.0005,0.0284
+6_4,0,train,31,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop,0.5115,0.0009,0.0293
+6_4,0,train,32,Smash,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash,0.5114,-0.0001,0.0292
+6_4,0,train,33,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop,0.5122,0.0008,0.03
+6_4,0,train,34,Lift,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift,0.5127,0.0004,0.0305
+6_4,0,train,35,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop,0.5134,0.0007,0.0312
+6_4,0,train,36,Clear,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear,0.5137,0.0003,0.0315
+6_4,0,train,37,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop,0.5143,0.0006,0.032
+6_4,0,train,38,Smash,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash,0.5141,-0.0001,0.0319
+6_4,0,train,39,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop,0.5146,0.0005,0.0324
+6_4,0,train,40,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop,0.515,0.0004,0.0328
+6_4,0,train,41,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop -> Drop,0.5155,0.0004,0.0333
+6_4,0,train,42,Lift,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop -> Drop -> Lift,0.5156,0.0002,0.0334
+6_4,0,train,43,Cross Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop -> Drop -> Lift -> Cross Drop,0.5157,0.0,0.0335
+6_4,0,train,44,Lift,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop -> Drop -> Lift -> Cross Drop -> Lift,0.5158,0.0001,0.0336
+6_4,0,train,45,Smash,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop -> Drop -> Lift -> Cross Drop -> Lift -> Smash,0.5156,-0.0002,0.0334
+6_4,0,train,46,Smash,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop -> Drop -> Lift -> Cross Drop -> Lift -> Smash -> Smash,0.5155,-0.0002,0.0333
+6_4,0,train,47,Drive,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop -> Drop -> Lift -> Cross Drop -> Lift -> Smash -> Smash -> Drive,0.5154,-0.0001,0.0331
+6_4,0,train,48,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop -> Drop -> Lift -> Cross Drop -> Lift -> Smash -> Smash -> Drive -> Drop,0.5157,0.0004,0.0335
+6_4,0,train,49,Lift,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop -> Drop -> Lift -> Cross Drop -> Lift -> Smash -> Smash -> Drive -> Drop -> Lift,0.5159,0.0001,0.0337
+6_4,0,train,50,Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop -> Drop -> Lift -> Cross Drop -> Lift -> Smash -> Smash -> Drive -> Drop -> Lift -> Drop,0.5163,0.0004,0.0341
+6_4,0,train,51,Smash,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop -> Drop -> Lift -> Cross Drop -> Lift -> Smash -> Smash -> Drive -> Drop -> Lift -> Drop -> Smash,0.5161,-0.0002,0.0339
+6_4,0,train,52,Cross Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop -> Drop -> Lift -> Cross Drop -> Lift -> Smash -> Smash -> Drive -> Drop -> Lift -> Drop -> Smash -> Cross Drop,0.516,-0.0001,0.0338
+6_4,0,train,53,Smash,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop -> Drop -> Lift -> Cross Drop -> Lift -> Smash -> Smash -> Drive -> Drop -> Lift -> Drop -> Smash -> Cross Drop -> Smash,0.5159,-0.0001,0.0337
+6_4,0,train,54,Cross Drop,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop -> Drop -> Lift -> Cross Drop -> Lift -> Smash -> Smash -> Drive -> Drop -> Lift -> Drop -> Smash -> Cross Drop -> Smash -> Cross Drop,0.5162,0.0002,0.034
+6_4,0,train,55,Smash,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop -> Drop -> Lift -> Cross Drop -> Lift -> Smash -> Smash -> Drive -> Drop -> Lift -> Drop -> Smash -> Cross Drop -> Smash -> Cross Drop -> Smash,0.516,-0.0002,0.0338
+6_4,0,train,56,Fall,Drop -> Smash -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Drop -> Smash -> Drop -> Clear -> Drop -> Smash -> Drop -> Smash -> Drop -> Smash -> Drop -> Clear -> Drop -> Lift -> Drop -> Lift -> Cross Drop -> Lift -> Drop -> Smash -> Lift -> Drop -> Smash -> Drop -> Lift -> Drop -> Clear -> Drop -> Smash -> Drop -> Drop -> Drop -> Lift -> Cross Drop -> Lift -> Smash -> Smash -> Drive -> Drop -> Lift -> Drop -> Smash -> Cross Drop -> Smash -> Cross Drop -> Smash -> Fall,0.5176,0.0016,0.0354
+6_5,1,validation,1,Smash,Smash,0.4841,0.0,0.0
+6_5,1,validation,2,Drop,Smash -> Drop,0.4736,-0.0105,-0.0105
+6_5,1,validation,3,Lift,Smash -> Drop -> Lift,0.4658,-0.0078,-0.0183
+6_5,1,validation,4,Lift,Smash -> Drop -> Lift -> Lift,0.4611,-0.0047,-0.023
+6_5,1,validation,5,Drop,Smash -> Drop -> Lift -> Lift -> Drop,0.461,-0.0001,-0.0231
+6_5,1,validation,6,Lift,Smash -> Drop -> Lift -> Lift -> Drop -> Lift,0.4609,-0.0001,-0.0232
+6_5,1,validation,7,Drop,Smash -> Drop -> Lift -> Lift -> Drop -> Lift -> Drop,0.4649,0.0039,-0.0192
+6_5,1,validation,8,Lift,Smash -> Drop -> Lift -> Lift -> Drop -> Lift -> Drop -> Lift,0.4678,0.0029,-0.0163
+6_5,1,validation,9,Drop,Smash -> Drop -> Lift -> Lift -> Drop -> Lift -> Drop -> Lift -> Drop,0.4733,0.0055,-0.0108
+6_5,1,validation,10,Smash,Smash -> Drop -> Lift -> Lift -> Drop -> Lift -> Drop -> Lift -> Drop -> Smash,0.4748,0.0015,-0.0093
+6_5,1,validation,11,Drop,Smash -> Drop -> Lift -> Lift -> Drop -> Lift -> Drop -> Lift -> Drop -> Smash -> Drop,0.4803,0.0055,-0.0038
+6_5,1,validation,12,Clear,Smash -> Drop -> Lift -> Lift -> Drop -> Lift -> Drop -> Lift -> Drop -> Smash -> Drop -> Clear,0.4847,0.0044,0.0006
+6_5,1,validation,13,Fall,Smash -> Drop -> Lift -> Lift -> Drop -> Lift -> Drop -> Lift -> Drop -> Smash -> Drop -> Clear -> Fall,0.4948,0.0102,0.0107
+8_5,1,train,1,Drop,Drop,0.4822,0.0,0.0
+8_5,1,train,2,Drop,Drop -> Drop,0.4723,-0.0099,-0.0099
+8_5,1,train,3,Drive,Drop -> Drop -> Drive,0.4601,-0.0122,-0.0221
+8_5,1,train,4,Drop,Drop -> Drop -> Drive -> Drop,0.4588,-0.0013,-0.0234
+8_5,1,train,5,Lift,Drop -> Drop -> Drive -> Drop -> Lift,0.4574,-0.0015,-0.0248
+8_5,1,train,6,Drop,Drop -> Drop -> Drive -> Drop -> Lift -> Drop,0.46,0.0026,-0.0222
+8_5,1,train,7,Drive,Drop -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive,0.4591,-0.0009,-0.0231
+8_5,1,train,8,Drop,Drop -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drop,0.4647,0.0057,-0.0175
+8_5,1,train,9,Clear,Drop -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drop -> Clear,0.4726,0.0079,-0.0096
+8_5,1,train,10,Lift,Drop -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drop -> Clear -> Lift,0.4762,0.0036,-0.006
+8_5,1,train,11,Smash,Drop -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drop -> Clear -> Lift -> Smash,0.4779,0.0017,-0.0043
+8_5,1,train,12,Lift,Drop -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drop -> Clear -> Lift -> Smash -> Lift,0.4818,0.0039,-0.0004
+8_5,1,train,13,Fall,Drop -> Drop -> Drive -> Drop -> Lift -> Drop -> Drive -> Drop -> Clear -> Lift -> Smash -> Lift -> Fall,0.4897,0.0079,0.0075
+8_10,0,test,1,Drop,Drop,0.4822,0.0,0.0
+8_10,0,test,2,Drive,Drop -> Drive,0.4653,-0.0169,-0.0169
+8_10,0,test,3,Lift,Drop -> Drive -> Lift,0.4596,-0.0057,-0.0226
+8_10,0,test,4,Clear,Drop -> Drive -> Lift -> Clear,0.4783,0.0188,-0.0039
+8_10,0,test,5,Lift,Drop -> Drive -> Lift -> Clear -> Lift,0.4722,-0.0061,-0.01
+8_10,0,test,6,Smash,Drop -> Drive -> Lift -> Clear -> Lift -> Smash,0.4692,-0.0031,-0.013
+8_10,0,test,7,Smash,Drop -> Drive -> Lift -> Clear -> Lift -> Smash -> Smash,0.4678,-0.0014,-0.0144
+8_10,0,test,8,Drop,Drop -> Drive -> Lift -> Clear -> Lift -> Smash -> Smash -> Drop,0.4723,0.0045,-0.0099
+8_10,0,test,9,Net,Drop -> Drive -> Lift -> Clear -> Lift -> Smash -> Smash -> Drop -> Net,0.4659,-0.0064,-0.0163
+8_12,1,train,1,Drop,Drop,0.4822,0.0,0.0
+8_12,1,train,2,Drop,Drop -> Drop,0.4723,-0.0099,-0.0099
+8_12,1,train,3,Drop,Drop -> Drop -> Drop,0.4663,-0.006,-0.0159
+8_12,1,train,4,Lift,Drop -> Drop -> Drop -> Lift,0.4619,-0.0044,-0.0203
+8_12,1,train,5,Lift,Drop -> Drop -> Drop -> Lift -> Lift,0.4601,-0.0018,-0.0221
+8_12,1,train,6,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop,0.4626,0.0025,-0.0196
+8_12,1,train,7,Smash,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash,0.4628,0.0002,-0.0194
+8_12,1,train,8,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop,0.4683,0.0055,-0.0139
+8_12,1,train,9,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop,0.4741,0.0059,-0.0081
+8_12,1,train,10,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop,0.4799,0.0058,-0.0023
+8_12,1,train,11,Clear,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear,0.4849,0.005,0.0027
+8_12,1,train,12,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop,0.4896,0.0046,0.0074
+8_12,1,train,13,Lift,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift,0.4926,0.0031,0.0104
+8_12,1,train,14,Lift,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift,0.4955,0.0029,0.0133
+8_12,1,train,15,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop,0.4992,0.0037,0.017
+8_12,1,train,16,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop,0.5024,0.0032,0.0202
+8_12,1,train,17,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop,0.5053,0.0028,0.0231
+8_12,1,train,18,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop,0.5077,0.0024,0.0255
+8_12,1,train,19,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop,0.5098,0.0021,0.0276
+8_12,1,train,20,Lift,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift,0.5109,0.0012,0.0287
+8_12,1,train,21,Clear,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear,0.5115,0.0006,0.0293
+8_12,1,train,22,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop,0.5128,0.0013,0.0306
+8_12,1,train,23,Lift,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop -> Lift,0.5135,0.0007,0.0313
+8_12,1,train,24,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop -> Lift -> Drop,0.5144,0.0009,0.0322
+8_12,1,train,25,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop -> Lift -> Drop -> Drop,0.5153,0.0008,0.0331
+8_12,1,train,26,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop -> Lift -> Drop -> Drop -> Drop,0.516,0.0008,0.0338
+8_12,1,train,27,Lift,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop -> Lift -> Drop -> Drop -> Drop -> Lift,0.5164,0.0003,0.0342
+8_12,1,train,28,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop -> Lift -> Drop -> Drop -> Drop -> Lift -> Drop,0.517,0.0007,0.0348
+8_12,1,train,29,Lift,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop -> Lift -> Drop -> Drop -> Drop -> Lift -> Drop -> Lift,0.5173,0.0003,0.0351
+8_12,1,train,30,Smash,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop -> Lift -> Drop -> Drop -> Drop -> Lift -> Drop -> Lift -> Smash,0.5171,-0.0002,0.0349
+8_12,1,train,31,Lift,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop -> Lift -> Drop -> Drop -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift,0.5173,0.0002,0.0351
+8_12,1,train,32,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop -> Lift -> Drop -> Drop -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop,0.5177,0.0005,0.0355
+8_12,1,train,33,Lift,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop -> Lift -> Drop -> Drop -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Lift,0.5178,0.0001,0.0356
+8_12,1,train,34,Drop,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop -> Lift -> Drop -> Drop -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Lift -> Drop,0.5182,0.0004,0.036
+8_12,1,train,35,Lift,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop -> Lift -> Drop -> Drop -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Lift -> Drop -> Lift,0.5183,0.0001,0.0361
+8_12,1,train,36,Clear,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop -> Lift -> Drop -> Drop -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Lift -> Drop -> Lift -> Clear,0.5184,0.0002,0.0362
+8_12,1,train,37,Smash,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop -> Lift -> Drop -> Drop -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Lift -> Drop -> Lift -> Clear -> Smash,0.5182,-0.0002,0.036
+8_12,1,train,38,Miss,Drop -> Drop -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Drop -> Drop -> Drop -> Drop -> Lift -> Clear -> Drop -> Lift -> Drop -> Drop -> Drop -> Lift -> Drop -> Lift -> Smash -> Lift -> Drop -> Lift -> Drop -> Lift -> Clear -> Smash -> Miss,0.5182,0.0,0.036
+8_13,0,train,1,Serve,Serve,0.4471,0.0,0.0
+8_13,0,train,2,Lift,Serve -> Lift,0.4461,-0.001,-0.001
+8_13,0,train,3,Drive,Serve -> Lift -> Drive,0.4394,-0.0067,-0.0077
+8_13,0,train,4,Drop,Serve -> Lift -> Drive -> Drop,0.4408,0.0014,-0.0063
+8_13,0,train,5,Drop,Serve -> Lift -> Drive -> Drop -> Drop,0.4435,0.0027,-0.0036
+8_13,0,train,6,Drop,Serve -> Lift -> Drive -> Drop -> Drop -> Drop,0.4478,0.0043,0.0007
+8_13,0,train,7,Lift,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift,0.4512,0.0034,0.0041
+8_13,0,train,8,Smash,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash,0.4535,0.0023,0.0064
+8_13,0,train,9,Drop,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop,0.46,0.0065,0.0129
+8_13,0,train,10,Drop,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop,0.4666,0.0065,0.0195
+8_13,0,train,11,Drop,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop,0.4728,0.0063,0.0257
+8_13,0,train,12,Drop,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop,0.4783,0.0055,0.0312
+8_13,0,train,13,Lift,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift,0.482,0.0036,0.0348
+8_13,0,train,14,Smash,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash,0.4836,0.0016,0.0364
+8_13,0,train,15,Drop,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop,0.4877,0.0042,0.0406
+8_13,0,train,16,Lift,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift,0.4904,0.0027,0.0433
+8_13,0,train,17,Clear,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear,0.4927,0.0023,0.0455
+8_13,0,train,18,Smash,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash,0.4937,0.001,0.0466
+8_13,0,train,19,Drop,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop,0.4963,0.0026,0.0491
+8_13,0,train,20,Lift,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift,0.4979,0.0016,0.0508
+8_13,0,train,21,Lift,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift,0.4993,0.0014,0.0522
+8_13,0,train,22,Drop,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop,0.5012,0.0019,0.0541
+8_13,0,train,23,Smash,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash,0.5015,0.0003,0.0544
+8_13,0,train,24,Drop,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop,0.5031,0.0016,0.056
+8_13,0,train,25,Smash,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Smash,0.5033,0.0002,0.0562
+8_13,0,train,26,Serve,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Smash -> Serve,0.506,0.0027,0.0589
+8_13,0,train,27,Lift,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Smash -> Serve -> Lift,0.5065,0.0005,0.0594
+8_13,0,train,28,Drop,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Smash -> Serve -> Lift -> Drop,0.5073,0.0008,0.0602
+8_13,0,train,29,Drop,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Smash -> Serve -> Lift -> Drop -> Drop,0.5081,0.0008,0.061
+8_13,0,train,30,Clear,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Smash -> Serve -> Lift -> Drop -> Drop -> Clear,0.5085,0.0004,0.0614
+8_13,0,train,31,Drop,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Smash -> Serve -> Lift -> Drop -> Drop -> Clear -> Drop,0.5092,0.0006,0.062
+8_13,0,train,32,Lift,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Smash -> Serve -> Lift -> Drop -> Drop -> Clear -> Drop -> Lift,0.5094,0.0003,0.0623
+8_13,0,train,33,Lift,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Smash -> Serve -> Lift -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift,0.5096,0.0002,0.0625
+8_13,0,train,34,Drop,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Smash -> Serve -> Lift -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop,0.5101,0.0005,0.063
+8_13,0,train,35,Lift,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Smash -> Serve -> Lift -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Lift,0.5103,0.0002,0.0632
+8_13,0,train,36,Lift,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Smash -> Serve -> Lift -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Lift -> Lift,0.5105,0.0002,0.0634
+8_13,0,train,37,Drop,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Smash -> Serve -> Lift -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Lift -> Lift -> Drop,0.5111,0.0006,0.064
+8_13,0,train,38,Lift,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Smash -> Serve -> Lift -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Lift -> Lift -> Drop -> Lift,0.5114,0.0003,0.0643
+8_13,0,train,39,Net,Serve -> Lift -> Drive -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Drop -> Drop -> Drop -> Lift -> Smash -> Drop -> Lift -> Clear -> Smash -> Drop -> Lift -> Lift -> Drop -> Smash -> Drop -> Smash -> Serve -> Lift -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Lift -> Lift -> Drop -> Lift -> Net,0.5103,-0.0011,0.0632
+8_14,1,validation,1,Drop,Drop,0.4822,0.0,0.0
+8_14,1,validation,2,Drop,Drop -> Drop,0.4723,-0.0099,-0.0099
+8_14,1,validation,3,Fall,Drop -> Drop -> Fall,0.5394,0.0671,0.0572
+8_15,1,train,1,Lift,Lift,0.4788,0.0,0.0
+8_15,1,train,2,Drop,Lift -> Drop,0.4704,-0.0085,-0.0085
+8_15,1,train,3,Lift,Lift -> Drop -> Lift,0.4634,-0.007,-0.0154
+8_15,1,train,4,Smash,Lift -> Drop -> Lift -> Smash,0.4592,-0.0042,-0.0196
+8_15,1,train,5,Drop,Lift -> Drop -> Lift -> Smash -> Drop,0.4597,0.0005,-0.0191
+8_15,1,train,6,Drop,Lift -> Drop -> Lift -> Smash -> Drop -> Drop,0.4621,0.0024,-0.0167
+8_15,1,train,7,Lift,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift,0.4641,0.002,-0.0147
+8_15,1,train,8,Drop,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop,0.4692,0.0051,-0.0096
+8_15,1,train,9,Lift,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift,0.4728,0.0036,-0.006
+8_15,1,train,10,Drop,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop,0.4785,0.0057,-0.0003
+8_15,1,train,11,Clear,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Clear,0.4835,0.005,0.0047
+8_15,1,train,12,Drop,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Clear -> Drop,0.4881,0.0046,0.0093
+8_15,1,train,13,Drop,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Clear -> Drop -> Drop,0.4924,0.0043,0.0136
+8_15,1,train,14,Lift,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Clear -> Drop -> Drop -> Lift,0.4952,0.0028,0.0164
+8_15,1,train,15,Drop,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Clear -> Drop -> Drop -> Lift -> Drop,0.4988,0.0036,0.02
+8_15,1,train,16,Lift,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Clear -> Drop -> Drop -> Lift -> Drop -> Lift,0.5011,0.0022,0.0222
+8_15,1,train,17,Drop,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Clear -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop,0.5039,0.0028,0.0251
+8_15,1,train,18,Lift,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Clear -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Lift,0.5056,0.0017,0.0268
+8_15,1,train,19,Drop,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Clear -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Lift -> Drop,0.5077,0.0021,0.0289
+8_15,1,train,20,Lift,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Clear -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Lift -> Drop -> Lift,0.509,0.0012,0.0302
+8_15,1,train,21,Lift,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Clear -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Lift -> Drop -> Lift -> Lift,0.51,0.001,0.0312
+8_15,1,train,22,Smash,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Clear -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Lift -> Drop -> Lift -> Lift -> Smash,0.5101,0.0001,0.0313
+8_15,1,train,23,Smash,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Clear -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Lift -> Drop -> Lift -> Lift -> Smash -> Smash,0.5102,0.0001,0.0313
+8_15,1,train,24,Drop,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Clear -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Lift -> Drop -> Lift -> Lift -> Smash -> Smash -> Drop,0.511,0.0009,0.0322
+8_15,1,train,25,Fall,Lift -> Drop -> Lift -> Smash -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Clear -> Drop -> Drop -> Lift -> Drop -> Lift -> Drop -> Lift -> Drop -> Lift -> Lift -> Smash -> Smash -> Drop -> Fall,0.5126,0.0015,0.0338
+8_16,1,validation,1,Drop,Drop,0.4822,0.0,0.0
+8_16,1,validation,2,Drive,Drop -> Drive,0.4653,-0.0169,-0.0169
+8_16,1,validation,3,Drop,Drop -> Drive -> Drop,0.4614,-0.0039,-0.0208
+8_16,1,validation,4,Drive,Drop -> Drive -> Drop -> Drive,0.4536,-0.0079,-0.0286
+8_16,1,validation,5,Lift,Drop -> Drive -> Drop -> Drive -> Lift,0.4528,-0.0007,-0.0294
+8_16,1,validation,6,Drop,Drop -> Drive -> Drop -> Drive -> Lift -> Drop,0.4561,0.0033,-0.0261
+8_16,1,validation,7,Lift,Drop -> Drive -> Drop -> Drive -> Lift -> Drop -> Lift,0.4586,0.0025,-0.0236
+8_16,1,validation,8,Drop,Drop -> Drive -> Drop -> Drive -> Lift -> Drop -> Lift -> Drop,0.464,0.0054,-0.0182
+8_16,1,validation,9,Lift,Drop -> Drive -> Drop -> Drive -> Lift -> Drop -> Lift -> Drop -> Lift,0.4679,0.0039,-0.0143
+8_16,1,validation,10,Drop,Drop -> Drive -> Drop -> Drive -> Lift -> Drop -> Lift -> Drop -> Lift -> Drop,0.4739,0.006,-0.0083
+8_16,1,validation,11,Lift,Drop -> Drive -> Drop -> Drive -> Lift -> Drop -> Lift -> Drop -> Lift -> Drop -> Lift,0.4778,0.0039,-0.0044
+8_16,1,validation,12,Net,Drop -> Drive -> Drop -> Drive -> Lift -> Drop -> Lift -> Drop -> Lift -> Drop -> Lift -> Net,0.4741,-0.0037,-0.0081
+8_17,1,test,1,Lift,Lift,0.4788,0.0,0.0
+8_17,1,test,2,Drive,Lift -> Drive,0.4645,-0.0143,-0.0143
+8_17,1,test,3,Drop,Lift -> Drive -> Drop,0.4605,-0.004,-0.0184
+8_17,1,test,4,Drop,Lift -> Drive -> Drop -> Drop,0.4585,-0.0019,-0.0203
+8_17,1,test,5,Drop,Lift -> Drive -> Drop -> Drop -> Drop,0.4587,0.0002,-0.0201
+8_17,1,test,6,Clear,Lift -> Drive -> Drop -> Drop -> Drop -> Clear,0.4712,0.0124,-0.0077
+8_17,1,test,7,Drop,Lift -> Drive -> Drop -> Drop -> Drop -> Clear -> Drop,0.4731,0.0019,-0.0057
+8_17,1,test,8,Lift,Lift -> Drive -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift,0.4743,0.0012,-0.0045
+8_17,1,test,9,Lift,Lift -> Drive -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift,0.477,0.0026,-0.0018
+8_17,1,test,10,Fall,Lift -> Drive -> Drop -> Drop -> Drop -> Clear -> Drop -> Lift -> Lift -> Fall,0.4915,0.0146,0.0127
+8_18,1,train,1,Lift,Lift,0.4788,0.0,0.0
+8_18,1,train,2,Drop,Lift -> Drop,0.4704,-0.0085,-0.0085
+8_18,1,train,3,Drive,Lift -> Drop -> Drive,0.4592,-0.0112,-0.0196
+8_18,1,train,4,Lift,Lift -> Drop -> Drive -> Lift,0.4558,-0.0034,-0.023
+8_18,1,train,5,Fall,Lift -> Drop -> Drive -> Lift -> Fall,0.4966,0.0408,0.0178
+8_19,1,train,1,Drop,Drop,0.4822,0.0,0.0
+8_19,1,train,2,Clear,Drop -> Clear,0.5189,0.0367,0.0367
+8_19,1,train,3,Drop,Drop -> Clear -> Drop,0.5025,-0.0164,0.0203
+8_19,1,train,4,Drop,Drop -> Clear -> Drop -> Drop,0.4924,-0.0102,0.0102
+8_19,1,train,5,Clear,Drop -> Clear -> Drop -> Drop -> Clear,0.5093,0.0169,0.0271
+8_19,1,train,6,Fall,Drop -> Clear -> Drop -> Drop -> Clear -> Fall,0.5516,0.0424,0.0694
+8_20,1,validation,1,Serve,Serve,0.4471,0.0,0.0
+8_20,1,validation,2,Drive,Serve -> Drive,0.4421,-0.005,-0.005
+8_20,1,validation,3,Lift,Serve -> Drive -> Lift,0.4403,-0.0019,-0.0069
+8_20,1,validation,4,Drop,Serve -> Drive -> Lift -> Drop,0.4413,0.001,-0.0058
+8_20,1,validation,5,Drop,Serve -> Drive -> Lift -> Drop -> Drop,0.4438,0.0025,-0.0033
+8_20,1,validation,6,Clear,Serve -> Drive -> Lift -> Drop -> Drop -> Clear,0.459,0.0152,0.0118
+8_20,1,validation,7,Drop,Serve -> Drive -> Lift -> Drop -> Drop -> Clear -> Drop,0.4618,0.0029,0.0147
+8_20,1,validation,8,Clear,Serve -> Drive -> Lift -> Drop -> Drop -> Clear -> Drop -> Clear,0.4729,0.0111,0.0257
+8_20,1,validation,9,Lift,Serve -> Drive -> Lift -> Drop -> Drop -> Clear -> Drop -> Clear -> Lift,0.4746,0.0017,0.0275
+8_20,1,validation,10,Net,Serve -> Drive -> Lift -> Drop -> Drop -> Clear -> Drop -> Clear -> Lift -> Net,0.4689,-0.0057,0.0218
+26_4,1,train,1,Long Defence,Long Defence,0.5254,0.0,0.0
+26_4,1,train,2,Fall,Long Defence -> Fall,0.5819,0.0565,0.0565
+26_5,1,test,1,Lift,Lift,0.4788,0.0,0.0
+26_5,1,test,2,Short Defence,Lift -> Short Defence,0.5787,0.0999,0.0999
+26_5,1,test,3,Drop,Lift -> Short Defence -> Drop,0.558,-0.0207,0.0792
+26_5,1,test,4,Lift,Lift -> Short Defence -> Drop -> Lift,0.5389,-0.0191,0.0601
+26_5,1,test,5,Fall,Lift -> Short Defence -> Drop -> Lift -> Fall,0.5757,0.0368,0.0969
+26_6,1,test,1,Backhand Serve,Backhand Serve,0.5646,0.0,0.0
+26_6,1,test,2,Net Shot,Backhand Serve -> Net Shot,0.5731,0.0085,0.0085
+26_6,1,test,3,Lift,Backhand Serve -> Net Shot -> Lift,0.5638,-0.0093,-0.0007
+26_6,1,test,4,Fall,Backhand Serve -> Net Shot -> Lift -> Fall,0.5908,0.027,0.0263
+26_7,1,test,1,Drive,Drive,0.4736,0.0,0.0
+26_7,1,test,2,Drive,Drive -> Drive,0.4621,-0.0115,-0.0115
+26_7,1,test,3,Lift,Drive -> Drive -> Lift,0.4563,-0.0058,-0.0173
+26_7,1,test,4,Long Defence,Drive -> Drive -> Lift -> Long Defence,0.4651,0.0088,-0.0085
+26_7,1,test,5,Fall,Drive -> Drive -> Lift -> Long Defence -> Fall,0.5098,0.0447,0.0362
+26_8,1,train,1,Backhand Serve,Backhand Serve,0.5646,0.0,0.0
+26_8,1,train,2,Lift,Backhand Serve -> Lift,0.5312,-0.0333,-0.0333
+26_8,1,train,3,Short Defence,Backhand Serve -> Lift -> Short Defence,0.5959,0.0647,0.0314
+26_8,1,train,4,Smash,Backhand Serve -> Lift -> Short Defence -> Smash,0.5814,-0.0145,0.0168
+26_8,1,train,5,Smash,Backhand Serve -> Lift -> Short Defence -> Smash -> Smash,0.5663,-0.0151,0.0017
+26_8,1,train,6,Lift,Backhand Serve -> Lift -> Short Defence -> Smash -> Smash -> Lift,0.5557,-0.0105,-0.0088
+26_8,1,train,7,Drive,Backhand Serve -> Lift -> Short Defence -> Smash -> Smash -> Lift -> Drive,0.5434,-0.0123,-0.0212
+26_8,1,train,8,Short Defence,Backhand Serve -> Lift -> Short Defence -> Smash -> Smash -> Lift -> Drive -> Short Defence,0.5673,0.0239,0.0028
+26_8,1,train,9,Smash,Backhand Serve -> Lift -> Short Defence -> Smash -> Smash -> Lift -> Drive -> Short Defence -> Smash,0.5609,-0.0064,-0.0037
+26_8,1,train,10,Net Shot,Backhand Serve -> Lift -> Short Defence -> Smash -> Smash -> Lift -> Drive -> Short Defence -> Smash -> Net Shot,0.5654,0.0045,0.0009
+26_8,1,train,11,Smash,Backhand Serve -> Lift -> Short Defence -> Smash -> Smash -> Lift -> Drive -> Short Defence -> Smash -> Net Shot -> Smash,0.5612,-0.0042,-0.0034
+26_8,1,train,12,Short Defence,Backhand Serve -> Lift -> Short Defence -> Smash -> Smash -> Lift -> Drive -> Short Defence -> Smash -> Net Shot -> Smash -> Short Defence,0.5808,0.0196,0.0162
+26_8,1,train,13,Short Defence,Backhand Serve -> Lift -> Short Defence -> Smash -> Smash -> Lift -> Drive -> Short Defence -> Smash -> Net Shot -> Smash -> Short Defence -> Short Defence,0.6027,0.022,0.0382
+26_8,1,train,14,Drive,Backhand Serve -> Lift -> Short Defence -> Smash -> Smash -> Lift -> Drive -> Short Defence -> Smash -> Net Shot -> Smash -> Short Defence -> Short Defence -> Drive,0.5988,-0.0039,0.0342
+26_8,1,train,15,Lift,Backhand Serve -> Lift -> Short Defence -> Smash -> Smash -> Lift -> Drive -> Short Defence -> Smash -> Net Shot -> Smash -> Short Defence -> Short Defence -> Drive -> Lift,0.5986,-0.0002,0.034
+26_8,1,train,16,Fall,Backhand Serve -> Lift -> Short Defence -> Smash -> Smash -> Lift -> Drive -> Short Defence -> Smash -> Net Shot -> Smash -> Short Defence -> Short Defence -> Drive -> Lift -> Fall,0.6059,0.0073,0.0413
+27_1,1,train,1,Clear,Clear,0.5517,0.0,0.0
+27_1,1,train,2,Net,Clear -> Net,0.53,-0.0217,-0.0217
+27_2,1,train,1,Clear,Clear,0.5517,0.0,0.0
+27_2,1,train,2,Drive,Clear -> Drive,0.51,-0.0417,-0.0417
+27_2,1,train,3,Drive,Clear -> Drive -> Drive,0.4842,-0.0259,-0.0676
+27_2,1,train,4,Short Defence,Clear -> Drive -> Drive -> Short Defence,0.5521,0.0679,0.0004
+27_2,1,train,5,Clear,Clear -> Drive -> Drive -> Short Defence -> Clear,0.5665,0.0144,0.0148
+27_2,1,train,6,Lift,Clear -> Drive -> Drive -> Short Defence -> Clear -> Lift,0.5557,-0.0108,0.004
+27_2,1,train,7,Fall,Clear -> Drive -> Drive -> Short Defence -> Clear -> Lift -> Fall,0.5858,0.0301,0.0341
+27_3,1,train,1,Lift,Lift,0.4788,0.0,0.0
+27_3,1,train,2,Drop,Lift -> Drop,0.4704,-0.0085,-0.0085
+27_3,1,train,3,Drop,Lift -> Drop -> Drop,0.4652,-0.0052,-0.0136
+27_3,1,train,4,Clear,Lift -> Drop -> Drop -> Clear,0.4856,0.0204,0.0068
+27_3,1,train,5,Fall,Lift -> Drop -> Drop -> Clear -> Fall,0.5362,0.0506,0.0574
+27_4,1,train,1,Clear,Clear,0.5517,0.0,0.0
+27_4,1,train,2,Fall,Clear -> Fall,0.5947,0.0429,0.0429
+27_5,0,validation,1,Long Defence,Long Defence,0.5254,0.0,0.0
+27_5,0,validation,2,Long Defence,Long Defence -> Long Defence,0.5316,0.0062,0.0062
+27_5,0,validation,3,Drive,Long Defence -> Long Defence -> Drive,0.5041,-0.0275,-0.0212
+27_5,0,validation,4,Net Shot,Long Defence -> Long Defence -> Drive -> Net Shot,0.5339,0.0298,0.0086
+27_5,0,validation,5,Lift,Long Defence -> Long Defence -> Drive -> Net Shot -> Lift,0.5221,-0.0119,-0.0033
+27_5,0,validation,6,Lift,Long Defence -> Long Defence -> Drive -> Net Shot -> Lift -> Lift,0.5133,-0.0088,-0.0121
+27_5,0,validation,7,Lift,Long Defence -> Long Defence -> Drive -> Net Shot -> Lift -> Lift -> Lift,0.5075,-0.0057,-0.0178
+27_5,0,validation,8,Smash,Long Defence -> Long Defence -> Drive -> Net Shot -> Lift -> Lift -> Lift -> Smash,0.5011,-0.0064,-0.0243
+27_5,0,validation,9,Out,Long Defence -> Long Defence -> Drive -> Net Shot -> Lift -> Lift -> Lift -> Smash -> Out,0.5043,0.0032,-0.0211
+27_6,1,train,1,Lift,Lift,0.4788,0.0,0.0
+27_6,1,train,2,Lift,Lift -> Lift,0.4687,-0.0101,-0.0101
+27_6,1,train,3,Smash,Lift -> Lift -> Smash,0.4631,-0.0056,-0.0157
+27_6,1,train,4,Net Shot,Lift -> Lift -> Smash -> Net Shot,0.4936,0.0305,0.0148
+27_6,1,train,5,Smash,Lift -> Lift -> Smash -> Net Shot -> Smash,0.4853,-0.0083,0.0065
+27_6,1,train,6,Net Kill,Lift -> Lift -> Smash -> Net Shot -> Smash -> Net Kill,0.4988,0.0135,0.02
+27_6,1,train,7,Net Kill,Lift -> Lift -> Smash -> Net Shot -> Smash -> Net Kill -> Net Kill,0.511,0.0122,0.0322
+27_6,1,train,8,Serve,Lift -> Lift -> Smash -> Net Shot -> Smash -> Net Kill -> Net Kill -> Serve,0.509,-0.0021,0.0301
+27_6,1,train,9,Smash,Lift -> Lift -> Smash -> Net Shot -> Smash -> Net Kill -> Net Kill -> Serve -> Smash,0.504,-0.005,0.0251
+27_6,1,train,10,Lift,Lift -> Lift -> Smash -> Net Shot -> Smash -> Net Kill -> Net Kill -> Serve -> Smash -> Lift,0.5035,-0.0004,0.0247
+27_6,1,train,11,Serve,Lift -> Lift -> Smash -> Net Shot -> Smash -> Net Kill -> Net Kill -> Serve -> Smash -> Lift -> Serve,0.5123,0.0087,0.0335
+27_6,1,train,12,Clear,Lift -> Lift -> Smash -> Net Shot -> Smash -> Net Kill -> Net Kill -> Serve -> Smash -> Lift -> Serve -> Clear,0.5133,0.001,0.0345
+27_6,1,train,13,Drive,Lift -> Lift -> Smash -> Net Shot -> Smash -> Net Kill -> Net Kill -> Serve -> Smash -> Lift -> Serve -> Clear -> Drive,0.5123,-0.001,0.0335
+27_6,1,train,14,Miss,Lift -> Lift -> Smash -> Net Shot -> Smash -> Net Kill -> Net Kill -> Serve -> Smash -> Lift -> Serve -> Clear -> Drive -> Miss,0.5134,0.0011,0.0346
+27_7,1,train,1,Long Defence,Long Defence,0.5254,0.0,0.0
+27_7,1,train,2,Lift,Long Defence -> Lift,0.4977,-0.0276,-0.0276
+27_7,1,train,3,Drive,Long Defence -> Lift -> Drive,0.4764,-0.0213,-0.0489
+27_7,1,train,4,Net Shot,Long Defence -> Lift -> Drive -> Net Shot,0.5075,0.031,-0.0179
+27_7,1,train,5,Smash,Long Defence -> Lift -> Drive -> Net Shot -> Smash,0.4971,-0.0104,-0.0283
+27_7,1,train,6,Net Shot,Long Defence -> Lift -> Drive -> Net Shot -> Smash -> Net Shot,0.519,0.0219,-0.0064
+27_7,1,train,7,Clear,Long Defence -> Lift -> Drive -> Net Shot -> Smash -> Net Shot -> Clear,0.5336,0.0146,0.0083
+27_7,1,train,8,Net Shot,Long Defence -> Lift -> Drive -> Net Shot -> Smash -> Net Shot -> Clear -> Net Shot,0.5531,0.0195,0.0277
+27_7,1,train,9,Lift,Long Defence -> Lift -> Drive -> Net Shot -> Smash -> Net Shot -> Clear -> Net Shot -> Lift,0.5492,-0.0039,0.0238
+27_7,1,train,10,Short Defence,Long Defence -> Lift -> Drive -> Net Shot -> Smash -> Net Shot -> Clear -> Net Shot -> Lift -> Short Defence,0.5783,0.0291,0.0529
+27_7,1,train,11,Lift,Long Defence -> Lift -> Drive -> Net Shot -> Smash -> Net Shot -> Clear -> Net Shot -> Lift -> Short Defence -> Lift,0.5772,-0.001,0.0519
+27_7,1,train,12,Long Defence,Long Defence -> Lift -> Drive -> Net Shot -> Smash -> Net Shot -> Clear -> Net Shot -> Lift -> Short Defence -> Lift -> Long Defence,0.5814,0.0041,0.056
+27_7,1,train,13,Smash,Long Defence -> Lift -> Drive -> Net Shot -> Smash -> Net Shot -> Clear -> Net Shot -> Lift -> Short Defence -> Lift -> Long Defence -> Smash,0.579,-0.0023,0.0537
+27_7,1,train,14,Fall,Long Defence -> Lift -> Drive -> Net Shot -> Smash -> Net Shot -> Clear -> Net Shot -> Lift -> Short Defence -> Lift -> Long Defence -> Smash -> Fall,0.5878,0.0088,0.0625
+27_8,1,test,1,Lift,Lift,0.4788,0.0,0.0
+27_8,1,test,2,Drive,Lift -> Drive,0.4645,-0.0143,-0.0143
+27_8,1,test,3,Lift,Lift -> Drive -> Lift,0.4587,-0.0058,-0.0201
+27_8,1,test,4,Lift,Lift -> Drive -> Lift -> Lift,0.4551,-0.0036,-0.0237
+27_8,1,test,5,Drive,Lift -> Drive -> Lift -> Lift -> Drive,0.4506,-0.0045,-0.0282
+27_8,1,test,6,Lift,Lift -> Drive -> Lift -> Lift -> Drive -> Lift,0.452,0.0013,-0.0268
+27_8,1,test,7,Drive,Lift -> Drive -> Lift -> Lift -> Drive -> Lift -> Drive,0.4513,-0.0006,-0.0275
+27_8,1,test,8,Clear,Lift -> Drive -> Lift -> Lift -> Drive -> Lift -> Drive -> Clear,0.4612,0.0099,-0.0176
+27_8,1,test,9,Fall,Lift -> Drive -> Lift -> Lift -> Drive -> Lift -> Drive -> Clear -> Fall,0.4841,0.0229,0.0053
+27_9,1,test,1,Net Shot,Net Shot,0.543,0.0,0.0
+27_9,1,test,2,Lift,Net Shot -> Lift,0.5337,-0.0093,-0.0093
+27_9,1,test,3,Long Defence,Net Shot -> Lift -> Long Defence,0.5383,0.0046,-0.0047
+27_9,1,test,4,Lift,Net Shot -> Lift -> Long Defence -> Lift,0.5217,-0.0166,-0.0213
+27_9,1,test,5,Lift,Net Shot -> Lift -> Long Defence -> Lift -> Lift,0.5094,-0.0124,-0.0337
+27_9,1,test,6,Lift,Net Shot -> Lift -> Long Defence -> Lift -> Lift -> Lift,0.5008,-0.0086,-0.0423
+27_9,1,test,7,Lift,Net Shot -> Lift -> Long Defence -> Lift -> Lift -> Lift -> Lift,0.4968,-0.004,-0.0463
+27_9,1,test,8,Long Defence,Net Shot -> Lift -> Long Defence -> Lift -> Lift -> Lift -> Lift -> Long Defence,0.4994,0.0026,-0.0436
+27_9,1,test,9,Smash,Net Shot -> Lift -> Long Defence -> Lift -> Lift -> Lift -> Lift -> Long Defence -> Smash,0.4965,-0.0029,-0.0465
+27_9,1,test,10,Net Shot,Net Shot -> Lift -> Long Defence -> Lift -> Lift -> Lift -> Lift -> Long Defence -> Smash -> Net Shot,0.5007,0.0042,-0.0424
+27_9,1,test,11,Clear,Net Shot -> Lift -> Long Defence -> Lift -> Lift -> Lift -> Lift -> Long Defence -> Smash -> Net Shot -> Clear,0.5096,0.009,-0.0334
+27_9,1,test,12,Net Shot,Net Shot -> Lift -> Long Defence -> Lift -> Lift -> Lift -> Lift -> Long Defence -> Smash -> Net Shot -> Clear -> Net Shot,0.5211,0.0115,-0.0219
+27_9,1,test,13,Smash,Net Shot -> Lift -> Long Defence -> Lift -> Lift -> Lift -> Lift -> Long Defence -> Smash -> Net Shot -> Clear -> Net Shot -> Smash,0.5186,-0.0026,-0.0245
+27_9,1,test,14,Lift,Net Shot -> Lift -> Long Defence -> Lift -> Lift -> Lift -> Lift -> Long Defence -> Smash -> Net Shot -> Clear -> Net Shot -> Smash -> Lift,0.5192,0.0006,-0.0239
+27_9,1,test,15,Net,Net Shot -> Lift -> Long Defence -> Lift -> Lift -> Lift -> Lift -> Long Defence -> Smash -> Net Shot -> Clear -> Net Shot -> Smash -> Lift -> Net,0.5114,-0.0078,-0.0317
+27_10,0,train,1,Lift,Lift,0.4788,0.0,0.0
+27_10,0,train,2,Smash,Lift -> Smash,0.4712,-0.0076,-0.0076
+27_10,0,train,3,Net Shot,Lift -> Smash -> Net Shot,0.5098,0.0386,0.031
+27_10,0,train,4,Smash,Lift -> Smash -> Net Shot -> Smash,0.4977,-0.0121,0.0189
+27_10,0,train,5,Long Defence,Lift -> Smash -> Net Shot -> Smash -> Long Defence,0.5038,0.0061,0.025
+27_10,0,train,6,Smash,Lift -> Smash -> Net Shot -> Smash -> Long Defence -> Smash,0.4957,-0.0081,0.0169
+27_10,0,train,7,Net Kill,Lift -> Smash -> Net Shot -> Smash -> Long Defence -> Smash -> Net Kill,0.5055,0.0097,0.0267
+27_10,0,train,8,Lift,Lift -> Smash -> Net Shot -> Smash -> Long Defence -> Smash -> Net Kill -> Lift,0.5024,-0.0031,0.0236
+27_10,0,train,9,Drop,Lift -> Smash -> Net Shot -> Smash -> Long Defence -> Smash -> Net Kill -> Lift -> Drop,0.5042,0.0018,0.0254
+27_10,0,train,10,Drop,Lift -> Smash -> Net Shot -> Smash -> Long Defence -> Smash -> Net Kill -> Lift -> Drop -> Drop,0.5071,0.0029,0.0283
+27_10,0,train,11,Clear,Lift -> Smash -> Net Shot -> Smash -> Long Defence -> Smash -> Net Kill -> Lift -> Drop -> Drop -> Clear,0.512,0.0048,0.0332
+27_10,0,train,12,Short Defence,Lift -> Smash -> Net Shot -> Smash -> Long Defence -> Smash -> Net Kill -> Lift -> Drop -> Drop -> Clear -> Short Defence,0.5327,0.0207,0.0539
+27_10,0,train,13,Drive,Lift -> Smash -> Net Shot -> Smash -> Long Defence -> Smash -> Net Kill -> Lift -> Drop -> Drop -> Clear -> Short Defence -> Drive,0.5287,-0.004,0.0498
+27_10,0,train,14,Fall,Lift -> Smash -> Net Shot -> Smash -> Long Defence -> Smash -> Net Kill -> Lift -> Drop -> Drop -> Clear -> Short Defence -> Drive -> Fall,0.5447,0.016,0.0659
+27_11,0,test,1,Smash,Smash,0.4841,0.0,0.0
+27_11,0,test,2,Drive,Smash -> Drive,0.4685,-0.0156,-0.0156
+27_11,0,test,3,Long Defence,Smash -> Drive -> Long Defence,0.4781,0.0096,-0.006
+27_11,0,test,4,Clear,Smash -> Drive -> Long Defence -> Clear,0.4984,0.0203,0.0143
+27_11,0,test,5,Fall,Smash -> Drive -> Long Defence -> Clear -> Fall,0.5478,0.0494,0.0637
+27_12,0,train,1,Lift,Lift,0.4788,0.0,0.0
+27_12,0,train,2,Drive,Lift -> Drive,0.4645,-0.0143,-0.0143
+27_12,0,train,3,Drive,Lift -> Drive -> Drive,0.4549,-0.0095,-0.0239
+27_12,0,train,4,Drive,Lift -> Drive -> Drive -> Drive,0.449,-0.006,-0.0298
+27_12,0,train,5,Net Shot,Lift -> Drive -> Drive -> Drive -> Net Shot,0.471,0.022,-0.0078
+27_12,0,train,6,Long Defence,Lift -> Drive -> Drive -> Drive -> Net Shot -> Long Defence,0.4795,0.0086,0.0007
+27_12,0,train,7,Long Defence,Lift -> Drive -> Drive -> Drive -> Net Shot -> Long Defence -> Long Defence,0.4873,0.0077,0.0085
+27_12,0,train,8,Smash,Lift -> Drive -> Drive -> Drive -> Net Shot -> Long Defence -> Long Defence -> Smash,0.4835,-0.0038,0.0047
+27_12,0,train,9,Net Shot,Lift -> Drive -> Drive -> Drive -> Net Shot -> Long Defence -> Long Defence -> Smash -> Net Shot,0.4976,0.0141,0.0188
+27_12,0,train,10,Smash,Lift -> Drive -> Drive -> Drive -> Net Shot -> Long Defence -> Long Defence -> Smash -> Net Shot -> Smash,0.4942,-0.0034,0.0154
+27_12,0,train,11,Drive,Lift -> Drive -> Drive -> Drive -> Net Shot -> Long Defence -> Long Defence -> Smash -> Net Shot -> Smash -> Drive,0.4913,-0.0029,0.0125
+27_12,0,train,12,Lift,Lift -> Drive -> Drive -> Drive -> Net Shot -> Long Defence -> Long Defence -> Smash -> Net Shot -> Smash -> Drive -> Lift,0.4936,0.0023,0.0148
+27_12,0,train,13,Smash,Lift -> Drive -> Drive -> Drive -> Net Shot -> Long Defence -> Long Defence -> Smash -> Net Shot -> Smash -> Drive -> Lift -> Smash,0.4938,0.0003,0.015
+27_12,0,train,14,Net Shot,Lift -> Drive -> Drive -> Drive -> Net Shot -> Long Defence -> Long Defence -> Smash -> Net Shot -> Smash -> Drive -> Lift -> Smash -> Net Shot,0.4935,-0.0003,0.0147
+27_12,0,train,15,Smash,Lift -> Drive -> Drive -> Drive -> Net Shot -> Long Defence -> Long Defence -> Smash -> Net Shot -> Smash -> Drive -> Lift -> Smash -> Net Shot -> Smash,0.4941,0.0006,0.0153
+27_12,0,train,16,Net Shot,Lift -> Drive -> Drive -> Drive -> Net Shot -> Long Defence -> Long Defence -> Smash -> Net Shot -> Smash -> Drive -> Lift -> Smash -> Net Shot -> Smash -> Net Shot,0.4961,0.002,0.0173
+27_12,0,train,17,Net Kill,Lift -> Drive -> Drive -> Drive -> Net Shot -> Long Defence -> Long Defence -> Smash -> Net Shot -> Smash -> Drive -> Lift -> Smash -> Net Shot -> Smash -> Net Shot -> Net Kill,0.5005,0.0044,0.0217
+27_12,0,train,18,Miss,Lift -> Drive -> Drive -> Drive -> Net Shot -> Long Defence -> Long Defence -> Smash -> Net Shot -> Smash -> Drive -> Lift -> Smash -> Net Shot -> Smash -> Net Shot -> Net Kill -> Miss,0.5023,0.0018,0.0235
+29_1,0,validation,1,Lift,Lift,0.4788,0.0,0.0
+29_1,0,validation,2,Clear,Lift -> Clear,0.5143,0.0355,0.0355
+29_1,0,validation,3,Lift,Lift -> Clear -> Lift,0.4957,-0.0186,0.0169
+29_1,0,validation,4,Drive,Lift -> Clear -> Lift -> Drive,0.4776,-0.0181,-0.0012
+29_1,0,validation,5,Lift,Lift -> Clear -> Lift -> Drive -> Lift,0.4733,-0.0043,-0.0055
+29_1,0,validation,6,Smash,Lift -> Clear -> Lift -> Drive -> Lift -> Smash,0.4697,-0.0035,-0.0091
+29_1,0,validation,7,Drive,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive,0.4667,-0.003,-0.0121
+29_1,0,validation,8,Drive,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive,0.4664,-0.0003,-0.0124
+29_1,0,validation,9,Drive,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive,0.4674,0.001,-0.0114
+29_1,0,validation,10,Lift,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift,0.4718,0.0044,-0.007
+29_1,0,validation,11,Drive,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive,0.4741,0.0023,-0.0047
+29_1,0,validation,12,Lift,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift,0.4783,0.0042,-0.0005
+29_1,0,validation,13,Drop,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop,0.4835,0.0052,0.0047
+29_1,0,validation,14,Clear,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear,0.4861,0.0026,0.0073
+29_1,0,validation,15,Lift,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift,0.4888,0.0028,0.01
+29_1,0,validation,16,Smash,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash,0.4899,0.0011,0.0111
+29_1,0,validation,17,Smash,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash,0.4909,0.0009,0.0121
+29_1,0,validation,18,Smash,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash,0.4916,0.0007,0.0128
+29_1,0,validation,19,Smash,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash,0.4922,0.0006,0.0134
+29_1,0,validation,20,Lift,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift,0.4933,0.0011,0.0145
+29_1,0,validation,21,Drive,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive,0.4937,0.0004,0.0149
+29_1,0,validation,22,Drive,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive -> Drive,0.4941,0.0003,0.0152
+29_1,0,validation,23,Lift,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive -> Drive -> Lift,0.4948,0.0008,0.016
+29_1,0,validation,24,Drop,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive -> Drive -> Lift -> Drop,0.4961,0.0013,0.0173
+29_1,0,validation,25,Smash,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive -> Drive -> Lift -> Drop -> Smash,0.4962,0.0001,0.0174
+29_1,0,validation,26,Lift,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive -> Drive -> Lift -> Drop -> Smash -> Lift,0.4969,0.0007,0.0181
+29_1,0,validation,27,Drive,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive -> Drive -> Lift -> Drop -> Smash -> Lift -> Drive,0.4971,0.0002,0.0183
+29_1,0,validation,28,Smash,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive -> Drive -> Lift -> Drop -> Smash -> Lift -> Drive -> Smash,0.4971,0.0,0.0183
+29_1,0,validation,29,Lift,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive -> Drive -> Lift -> Drop -> Smash -> Lift -> Drive -> Smash -> Lift,0.4976,0.0004,0.0187
+29_1,0,validation,30,Clear,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive -> Drive -> Lift -> Drop -> Smash -> Lift -> Drive -> Smash -> Lift -> Clear,0.4984,0.0008,0.0196
+29_1,0,validation,31,Smash,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive -> Drive -> Lift -> Drop -> Smash -> Lift -> Drive -> Smash -> Lift -> Clear -> Smash,0.4984,0.0,0.0196
+29_1,0,validation,32,Lift,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive -> Drive -> Lift -> Drop -> Smash -> Lift -> Drive -> Smash -> Lift -> Clear -> Smash -> Lift,0.4987,0.0003,0.0199
+29_1,0,validation,33,Clear,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive -> Drive -> Lift -> Drop -> Smash -> Lift -> Drive -> Smash -> Lift -> Clear -> Smash -> Lift -> Clear,0.4998,0.001,0.021
+29_1,0,validation,34,Smash,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive -> Drive -> Lift -> Drop -> Smash -> Lift -> Drive -> Smash -> Lift -> Clear -> Smash -> Lift -> Clear -> Smash,0.4997,-0.0,0.0209
+29_1,0,validation,35,Lift,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive -> Drive -> Lift -> Drop -> Smash -> Lift -> Drive -> Smash -> Lift -> Clear -> Smash -> Lift -> Clear -> Smash -> Lift,0.5001,0.0004,0.0213
+29_1,0,validation,36,Smash,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive -> Drive -> Lift -> Drop -> Smash -> Lift -> Drive -> Smash -> Lift -> Clear -> Smash -> Lift -> Clear -> Smash -> Lift -> Smash,0.5001,-0.0001,0.0212
+29_1,0,validation,37,Fall,Lift -> Clear -> Lift -> Drive -> Lift -> Smash -> Drive -> Drive -> Drive -> Lift -> Drive -> Lift -> Drop -> Clear -> Lift -> Smash -> Smash -> Smash -> Smash -> Lift -> Drive -> Drive -> Lift -> Drop -> Smash -> Lift -> Drive -> Smash -> Lift -> Clear -> Smash -> Lift -> Clear -> Smash -> Lift -> Smash -> Fall,0.5025,0.0024,0.0237
+29_2,0,train,1,Lift,Lift,0.4788,0.0,0.0
+29_2,0,train,2,Drive,Lift -> Drive,0.4645,-0.0143,-0.0143
+29_2,0,train,3,Drive,Lift -> Drive -> Drive,0.4549,-0.0095,-0.0239
+29_2,0,train,4,Drop,Lift -> Drive -> Drive -> Drop,0.4537,-0.0013,-0.0251
+29_2,0,train,5,Clear,Lift -> Drive -> Drive -> Drop -> Clear,0.4682,0.0146,-0.0106
+29_2,0,train,6,Drive,Lift -> Drive -> Drive -> Drop -> Clear -> Drive,0.4629,-0.0054,-0.016
+29_2,0,train,7,Drop,Lift -> Drive -> Drive -> Drop -> Clear -> Drive -> Drop,0.4656,0.0027,-0.0132
+29_2,0,train,8,Smash,Lift -> Drive -> Drive -> Drop -> Clear -> Drive -> Drop -> Smash,0.4658,0.0002,-0.013
+29_2,0,train,9,Drive,Lift -> Drive -> Drive -> Drop -> Clear -> Drive -> Drop -> Smash -> Drive,0.4663,0.0005,-0.0125
+29_2,0,train,10,Net,Lift -> Drive -> Drive -> Drop -> Clear -> Drive -> Drop -> Smash -> Drive -> Net,0.461,-0.0053,-0.0178
+29_3,0,train,1,Smash,Smash,0.4841,0.0,0.0
+29_3,0,train,2,Lift,Smash -> Lift,0.472,-0.0121,-0.0121
+29_3,0,train,3,Clear,Smash -> Lift -> Clear,0.4955,0.0235,0.0114
+29_3,0,train,4,Fall,Smash -> Lift -> Clear -> Fall,0.5504,0.0549,0.0663
+29_4,0,test,1,Serve,Serve,0.4471,0.0,0.0
+29_4,0,test,2,Drop,Serve -> Drop,0.4478,0.0006,0.0006
+29_4,0,test,3,Lift,Serve -> Drop -> Lift,0.4447,-0.003,-0.0024
+29_4,0,test,4,Smash,Serve -> Drop -> Lift -> Smash,0.4436,-0.0012,-0.0035
+29_4,0,test,5,Lift,Serve -> Drop -> Lift -> Smash -> Lift,0.4444,0.0009,-0.0027
+29_4,0,test,6,Clear,Serve -> Drop -> Lift -> Smash -> Lift -> Clear,0.459,0.0146,0.0119
+29_4,0,test,7,Clear,Serve -> Drop -> Lift -> Smash -> Lift -> Clear -> Clear,0.4737,0.0147,0.0266
+29_4,0,test,8,Drive,Serve -> Drop -> Lift -> Smash -> Lift -> Clear -> Clear -> Drive,0.4695,-0.0043,0.0223
+29_4,0,test,9,Clear,Serve -> Drop -> Lift -> Smash -> Lift -> Clear -> Clear -> Drive -> Clear,0.4801,0.0106,0.033
+29_4,0,test,10,Drive,Serve -> Drop -> Lift -> Smash -> Lift -> Clear -> Clear -> Drive -> Clear -> Drive,0.4782,-0.0019,0.0311
+29_4,0,test,11,Net,Serve -> Drop -> Lift -> Smash -> Lift -> Clear -> Clear -> Drive -> Clear -> Drive -> Net,0.4725,-0.0057,0.0253
+85_1,1,test,1,Serve,Serve,0.4471,0.0,0.0
+85_1,1,test,2,Lift,Serve -> Lift,0.4461,-0.001,-0.001
+85_1,1,test,3,Lift,Serve -> Lift -> Lift,0.4435,-0.0026,-0.0036
+85_1,1,test,4,Clear,Serve -> Lift -> Lift -> Clear,0.4644,0.0209,0.0172
+85_1,1,test,5,Serve,Serve -> Lift -> Lift -> Clear -> Serve,0.4578,-0.0066,0.0106
+85_1,1,test,6,Drive,Serve -> Lift -> Lift -> Clear -> Serve -> Drive,0.4529,-0.0049,0.0057
+85_1,1,test,7,Net Kill,Serve -> Lift -> Lift -> Clear -> Serve -> Drive -> Net Kill,0.4624,0.0095,0.0152
+85_1,1,test,8,Clear,Serve -> Lift -> Lift -> Clear -> Serve -> Drive -> Net Kill -> Clear,0.4732,0.0108,0.0261
+85_1,1,test,9,Lift,Serve -> Lift -> Lift -> Clear -> Serve -> Drive -> Net Kill -> Clear -> Lift,0.4745,0.0013,0.0274
+85_1,1,test,10,Fall,Serve -> Lift -> Lift -> Clear -> Serve -> Drive -> Net Kill -> Clear -> Lift -> Fall,0.4971,0.0226,0.05
+85_2,1,test,1,Net Shot,Net Shot,0.543,0.0,0.0
+85_2,1,test,2,Smash,Net Shot -> Smash,0.5293,-0.0137,-0.0137
+85_2,1,test,3,Net Shot,Net Shot -> Smash -> Net Shot,0.5436,0.0142,0.0005
+85_2,1,test,4,Lift,Net Shot -> Smash -> Net Shot -> Lift,0.54,-0.0036,-0.0031
+85_2,1,test,5,Net Shot,Net Shot -> Smash -> Net Shot -> Lift -> Net Shot,0.5504,0.0104,0.0074
+85_2,1,test,6,Drop,Net Shot -> Smash -> Net Shot -> Lift -> Net Shot -> Drop,0.5527,0.0023,0.0097
+85_2,1,test,7,Lift,Net Shot -> Smash -> Net Shot -> Lift -> Net Shot -> Drop -> Lift,0.5513,-0.0014,0.0083
+85_2,1,test,8,Lift,Net Shot -> Smash -> Net Shot -> Lift -> Net Shot -> Drop -> Lift -> Lift,0.5472,-0.0041,0.0042
+85_2,1,test,9,Net,Net Shot -> Smash -> Net Shot -> Lift -> Net Shot -> Drop -> Lift -> Lift -> Net,0.5329,-0.0143,-0.0102
+85_3,1,train,1,Out,Out,0.5507,0.0,0.0
+85_4,1,train,1,Lift,Lift,0.4788,0.0,0.0
+85_4,1,train,2,Serve,Lift -> Serve,0.4527,-0.0261,-0.0261
+85_4,1,train,3,Lift,Lift -> Serve -> Lift,0.4468,-0.0058,-0.032
+85_4,1,train,4,Fall,Lift -> Serve -> Lift -> Fall,0.4964,0.0495,0.0175
+85_5,1,test,1,Lift,Lift,0.4788,0.0,0.0
+85_5,1,test,2,Net Shot,Lift -> Net Shot,0.5316,0.0528,0.0528
+85_5,1,test,3,Smash,Lift -> Net Shot -> Smash,0.5128,-0.0188,0.034
+85_5,1,test,4,Lift,Lift -> Net Shot -> Smash -> Lift,0.4986,-0.0142,0.0198
+85_5,1,test,5,Long Defence,Lift -> Net Shot -> Smash -> Lift -> Long Defence,0.5041,0.0055,0.0253
+85_5,1,test,6,Long Defence,Lift -> Net Shot -> Smash -> Lift -> Long Defence -> Long Defence,0.5101,0.006,0.0313
+85_5,1,test,7,Net Shot,Lift -> Net Shot -> Smash -> Lift -> Long Defence -> Long Defence -> Net Shot,0.5287,0.0186,0.0499
+85_5,1,test,8,Clear,Lift -> Net Shot -> Smash -> Lift -> Long Defence -> Long Defence -> Net Shot -> Clear,0.542,0.0133,0.0632
+85_5,1,test,9,Long Defence,Lift -> Net Shot -> Smash -> Lift -> Long Defence -> Long Defence -> Net Shot -> Clear -> Long Defence,0.5486,0.0066,0.0698
+85_5,1,test,10,Net,Lift -> Net Shot -> Smash -> Lift -> Long Defence -> Long Defence -> Net Shot -> Clear -> Long Defence -> Net,0.5375,-0.0111,0.0587
+85_6,1,train,1,Net Shot,Net Shot,0.543,0.0,0.0
+85_6,1,train,2,Clear,Net Shot -> Clear,0.5645,0.0215,0.0215
+85_6,1,train,3,Short Defence,Net Shot -> Clear -> Short Defence,0.6091,0.0446,0.0661
+85_6,1,train,4,Clear,Net Shot -> Clear -> Short Defence -> Clear,0.6206,0.0114,0.0775
+85_6,1,train,5,Net Shot,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot,0.628,0.0074,0.085
+85_6,1,train,6,Smash,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash,0.6203,-0.0077,0.0772
+85_6,1,train,7,Net Shot,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot,0.6238,0.0035,0.0808
+85_6,1,train,8,Clear,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear,0.6308,0.007,0.0877
+85_6,1,train,9,Serve,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve,0.6349,0.0041,0.0918
+85_6,1,train,10,Lift,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift,0.6349,-0.0,0.0918
+85_6,1,train,11,Drive,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive,0.6323,-0.0026,0.0892
+85_6,1,train,12,Net Shot,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive -> Net Shot,0.6283,-0.004,0.0852
+85_6,1,train,13,Smash,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive -> Net Shot -> Smash,0.6257,-0.0026,0.0827
+85_6,1,train,14,Net Kill,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive -> Net Shot -> Smash -> Net Kill,0.6226,-0.0031,0.0796
+85_6,1,train,15,Lift,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive -> Net Shot -> Smash -> Net Kill -> Lift,0.6227,0.0,0.0796
+85_6,1,train,16,Drive,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive -> Net Shot -> Smash -> Net Kill -> Lift -> Drive,0.6216,-0.0011,0.0785
+85_6,1,train,17,Drive,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive -> Net Shot -> Smash -> Net Kill -> Lift -> Drive -> Drive,0.6206,-0.001,0.0776
+85_6,1,train,18,Lift,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive -> Net Shot -> Smash -> Net Kill -> Lift -> Drive -> Drive -> Lift,0.6202,-0.0004,0.0772
+85_6,1,train,19,Net Kill,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive -> Net Shot -> Smash -> Net Kill -> Lift -> Drive -> Drive -> Lift -> Net Kill,0.6163,-0.0039,0.0733
+85_6,1,train,20,Lift,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive -> Net Shot -> Smash -> Net Kill -> Lift -> Drive -> Drive -> Lift -> Net Kill -> Lift,0.6156,-0.0007,0.0725
+85_6,1,train,21,Long Defence,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive -> Net Shot -> Smash -> Net Kill -> Lift -> Drive -> Drive -> Lift -> Net Kill -> Lift -> Long Defence,0.6141,-0.0015,0.071
+85_6,1,train,22,Serve,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive -> Net Shot -> Smash -> Net Kill -> Lift -> Drive -> Drive -> Lift -> Net Kill -> Lift -> Long Defence -> Serve,0.6146,0.0005,0.0715
+85_6,1,train,23,Lift,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive -> Net Shot -> Smash -> Net Kill -> Lift -> Drive -> Drive -> Lift -> Net Kill -> Lift -> Long Defence -> Serve -> Lift,0.6133,-0.0013,0.0702
+85_6,1,train,24,Drive,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive -> Net Shot -> Smash -> Net Kill -> Lift -> Drive -> Drive -> Lift -> Net Kill -> Lift -> Long Defence -> Serve -> Lift -> Drive,0.6115,-0.0018,0.0684
+85_6,1,train,25,Smash,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive -> Net Shot -> Smash -> Net Kill -> Lift -> Drive -> Drive -> Lift -> Net Kill -> Lift -> Long Defence -> Serve -> Lift -> Drive -> Smash,0.6092,-0.0022,0.0662
+85_6,1,train,26,Drive,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive -> Net Shot -> Smash -> Net Kill -> Lift -> Drive -> Drive -> Lift -> Net Kill -> Lift -> Long Defence -> Serve -> Lift -> Drive -> Smash -> Drive,0.607,-0.0022,0.064
+85_6,1,train,27,Net,Net Shot -> Clear -> Short Defence -> Clear -> Net Shot -> Smash -> Net Shot -> Clear -> Serve -> Lift -> Drive -> Net Shot -> Smash -> Net Kill -> Lift -> Drive -> Drive -> Lift -> Net Kill -> Lift -> Long Defence -> Serve -> Lift -> Drive -> Smash -> Drive -> Net,0.6055,-0.0016,0.0624
+111_1,0,test,1,Serve,Serve,0.4471,0.0,0.0
+111_1,0,test,2,Smash,Serve -> Smash,0.4491,0.002,0.002
+111_1,0,test,3,Drop,Serve -> Smash -> Drop,0.4474,-0.0017,0.0003
+111_1,0,test,4,Drive,Serve -> Smash -> Drop -> Drive,0.4414,-0.006,-0.0057
+111_1,0,test,5,Clear,Serve -> Smash -> Drop -> Drive -> Clear,0.4584,0.0169,0.0112
+111_1,0,test,6,Clear,Serve -> Smash -> Drop -> Drive -> Clear -> Clear,0.4754,0.0171,0.0283
+111_1,0,test,7,Drive,Serve -> Smash -> Drop -> Drive -> Clear -> Clear -> Drive,0.4684,-0.007,0.0213
+111_1,0,test,8,Lift,Serve -> Smash -> Drop -> Drive -> Clear -> Clear -> Drive -> Lift,0.4698,0.0014,0.0226
+111_1,0,test,9,Drop,Serve -> Smash -> Drop -> Drive -> Clear -> Clear -> Drive -> Lift -> Drop,0.4747,0.0049,0.0275
+111_1,0,test,10,Drive,Serve -> Smash -> Drop -> Drive -> Clear -> Clear -> Drive -> Lift -> Drop -> Drive,0.4757,0.001,0.0286
+111_1,0,test,11,Drive,Serve -> Smash -> Drop -> Drive -> Clear -> Clear -> Drive -> Lift -> Drop -> Drive -> Drive,0.4776,0.0019,0.0304
+111_1,0,test,12,Lift,Serve -> Smash -> Drop -> Drive -> Clear -> Clear -> Drive -> Lift -> Drop -> Drive -> Drive -> Lift,0.482,0.0044,0.0349
+111_1,0,test,13,Drop,Serve -> Smash -> Drop -> Drive -> Clear -> Clear -> Drive -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop,0.4875,0.0055,0.0404
+111_1,0,test,14,Net,Serve -> Smash -> Drop -> Drive -> Clear -> Clear -> Drive -> Lift -> Drop -> Drive -> Drive -> Lift -> Drop -> Net,0.4842,-0.0034,0.037
+111_2,0,train,1,Serve,Serve,0.4471,0.0,0.0
+111_2,0,train,2,Drive,Serve -> Drive,0.4421,-0.005,-0.005
+111_2,0,train,3,Lift,Serve -> Drive -> Lift,0.4403,-0.0019,-0.0069
+111_2,0,train,4,Drop,Serve -> Drive -> Lift -> Drop,0.4413,0.001,-0.0058
+111_2,0,train,5,Drop,Serve -> Drive -> Lift -> Drop -> Drop,0.4438,0.0025,-0.0033
+111_2,0,train,6,Drive,Serve -> Drive -> Lift -> Drop -> Drop -> Drive,0.4427,-0.0011,-0.0044
+111_2,0,train,7,Drive,Serve -> Drive -> Lift -> Drop -> Drop -> Drive -> Drive,0.4433,0.0006,-0.0038
+111_2,0,train,8,Clear,Serve -> Drive -> Lift -> Drop -> Drop -> Drive -> Drive -> Clear,0.4551,0.0118,0.008
+111_2,0,train,9,Serve,Serve -> Drive -> Lift -> Drop -> Drop -> Drive -> Drive -> Clear -> Serve,0.4632,0.0081,0.0161
+111_2,0,train,10,Net,Serve -> Drive -> Lift -> Drop -> Drop -> Drive -> Drive -> Clear -> Serve -> Net,0.4584,-0.0048,0.0113
+111_3,1,validation,1,Serve,Serve,0.4471,0.0,0.0
+111_3,1,validation,2,Clear,Serve -> Clear,0.4888,0.0417,0.0417
+111_3,1,validation,3,Drop,Serve -> Clear -> Drop,0.4755,-0.0133,0.0284
+111_3,1,validation,4,Clear,Serve -> Clear -> Drop -> Clear,0.4978,0.0223,0.0507
+111_3,1,validation,5,Serve,Serve -> Clear -> Drop -> Clear -> Serve,0.4826,-0.0153,0.0354
+111_3,1,validation,6,Smash,Serve -> Clear -> Drop -> Clear -> Serve -> Smash,0.4752,-0.0073,0.0281
+111_3,1,validation,7,Clear,Serve -> Clear -> Drop -> Clear -> Serve -> Smash -> Clear,0.4861,0.0108,0.0389
+111_3,1,validation,8,Lift,Serve -> Clear -> Drop -> Clear -> Serve -> Smash -> Clear -> Lift,0.4842,-0.0018,0.0371
+111_3,1,validation,9,Drop,Serve -> Clear -> Drop -> Clear -> Serve -> Smash -> Clear -> Lift -> Drop,0.4877,0.0035,0.0406
+111_3,1,validation,10,Drop,Serve -> Clear -> Drop -> Clear -> Serve -> Smash -> Clear -> Lift -> Drop -> Drop,0.4924,0.0047,0.0453
+111_3,1,validation,11,Lift,Serve -> Clear -> Drop -> Clear -> Serve -> Smash -> Clear -> Lift -> Drop -> Drop -> Lift,0.495,0.0026,0.0479
+111_3,1,validation,12,Lift,Serve -> Clear -> Drop -> Clear -> Serve -> Smash -> Clear -> Lift -> Drop -> Drop -> Lift -> Lift,0.4977,0.0026,0.0505
+111_3,1,validation,13,Miss,Serve -> Clear -> Drop -> Clear -> Serve -> Smash -> Clear -> Lift -> Drop -> Drop -> Lift -> Lift -> Miss,0.4999,0.0022,0.0527
+111_5,0,validation,1,Lift,Lift,0.4788,0.0,0.0
+111_5,0,validation,2,Clear,Lift -> Clear,0.5143,0.0355,0.0355
+111_5,0,validation,3,Drive,Lift -> Clear -> Drive,0.4894,-0.025,0.0105
+111_5,0,validation,4,Fall,Lift -> Clear -> Drive -> Fall,0.5426,0.0532,0.0638
+111_6,0,train,1,Drop,Drop,0.4822,0.0,0.0
+111_6,0,train,2,Drop,Drop -> Drop,0.4723,-0.0099,-0.0099
+111_6,0,train,3,Net,Drop -> Drop -> Net,0.4672,-0.0051,-0.015
+111_7,0,train,1,Serve,Serve,0.4471,0.0,0.0
+111_7,0,train,2,Clear,Serve -> Clear,0.4888,0.0417,0.0417
+111_7,0,train,3,Drop,Serve -> Clear -> Drop,0.4755,-0.0133,0.0284
+111_7,0,train,4,Lift,Serve -> Clear -> Drop -> Lift,0.4662,-0.0094,0.019
+111_7,0,train,5,Clear,Serve -> Clear -> Drop -> Lift -> Clear,0.4845,0.0183,0.0374
+111_7,0,train,6,Lift,Serve -> Clear -> Drop -> Lift -> Clear -> Lift,0.4787,-0.0058,0.0316
+111_7,0,train,7,Lift,Serve -> Clear -> Drop -> Lift -> Clear -> Lift -> Lift,0.4769,-0.0019,0.0297
+111_7,0,train,8,Smash,Serve -> Clear -> Drop -> Lift -> Clear -> Lift -> Lift -> Smash,0.4758,-0.001,0.0287
+111_7,0,train,9,Lift,Serve -> Clear -> Drop -> Lift -> Clear -> Lift -> Lift -> Smash -> Lift,0.4787,0.0029,0.0316
+111_7,0,train,10,Drive,Serve -> Clear -> Drop -> Lift -> Clear -> Lift -> Lift -> Smash -> Lift -> Drive,0.4796,0.0008,0.0324
+111_7,0,train,11,Lift,Serve -> Clear -> Drop -> Lift -> Clear -> Lift -> Lift -> Smash -> Lift -> Drive -> Lift,0.484,0.0044,0.0369
+111_7,0,train,12,Fall,Serve -> Clear -> Drop -> Lift -> Clear -> Lift -> Lift -> Smash -> Lift -> Drive -> Lift -> Fall,0.4896,0.0056,0.0425
+111_8,0,train,1,Clear,Clear,0.5517,0.0,0.0
+111_8,0,train,2,Smash,Clear -> Smash,0.52,-0.0317,-0.0317
+111_8,0,train,3,Clear,Clear -> Smash -> Clear,0.5396,0.0196,-0.0121
+111_8,0,train,4,Smash,Clear -> Smash -> Clear -> Smash,0.5229,-0.0167,-0.0288
+111_8,0,train,5,Serve,Clear -> Smash -> Clear -> Smash -> Serve,0.5083,-0.0146,-0.0435
+111_8,0,train,6,Lift,Clear -> Smash -> Clear -> Smash -> Serve -> Lift,0.4982,-0.01,-0.0535
+111_8,0,train,7,Drop,Clear -> Smash -> Clear -> Smash -> Serve -> Lift -> Drop,0.4968,-0.0014,-0.0549
+111_8,0,train,8,Drop,Clear -> Smash -> Clear -> Smash -> Serve -> Lift -> Drop -> Drop,0.4979,0.0011,-0.0538
+111_8,0,train,9,Drop,Clear -> Smash -> Clear -> Smash -> Serve -> Lift -> Drop -> Drop -> Drop,0.5001,0.0022,-0.0516
+111_8,0,train,10,Clear,Clear -> Smash -> Clear -> Smash -> Serve -> Lift -> Drop -> Drop -> Drop -> Clear,0.5029,0.0028,-0.0488
+111_8,0,train,11,Drop,Clear -> Smash -> Clear -> Smash -> Serve -> Lift -> Drop -> Drop -> Drop -> Clear -> Drop,0.506,0.0031,-0.0457
+111_8,0,train,12,Serve,Clear -> Smash -> Clear -> Smash -> Serve -> Lift -> Drop -> Drop -> Drop -> Clear -> Drop -> Serve,0.5138,0.0077,-0.038
+111_8,0,train,13,Drop,Clear -> Smash -> Clear -> Smash -> Serve -> Lift -> Drop -> Drop -> Drop -> Clear -> Drop -> Serve -> Drop,0.5155,0.0018,-0.0362
+111_8,0,train,14,Lift,Clear -> Smash -> Clear -> Smash -> Serve -> Lift -> Drop -> Drop -> Drop -> Clear -> Drop -> Serve -> Drop -> Lift,0.5159,0.0004,-0.0358
+111_8,0,train,15,Smash,Clear -> Smash -> Clear -> Smash -> Serve -> Lift -> Drop -> Drop -> Drop -> Clear -> Drop -> Serve -> Drop -> Lift -> Smash,0.5149,-0.0011,-0.0369
+111_8,0,train,16,Serve,Clear -> Smash -> Clear -> Smash -> Serve -> Lift -> Drop -> Drop -> Drop -> Clear -> Drop -> Serve -> Drop -> Lift -> Smash -> Serve,0.5191,0.0042,-0.0326
+111_8,0,train,17,Clear,Clear -> Smash -> Clear -> Smash -> Serve -> Lift -> Drop -> Drop -> Drop -> Clear -> Drop -> Serve -> Drop -> Lift -> Smash -> Serve -> Clear,0.5188,-0.0003,-0.0329
+111_8,0,train,18,Drop,Clear -> Smash -> Clear -> Smash -> Serve -> Lift -> Drop -> Drop -> Drop -> Clear -> Drop -> Serve -> Drop -> Lift -> Smash -> Serve -> Clear -> Drop,0.5198,0.001,-0.0319
+111_8,0,train,19,Net,Clear -> Smash -> Clear -> Smash -> Serve -> Lift -> Drop -> Drop -> Drop -> Clear -> Drop -> Serve -> Drop -> Lift -> Smash -> Serve -> Clear -> Drop -> Net,0.5178,-0.002,-0.0339
+111_9,0,train,1,Drive,Drive,0.4736,0.0,0.0
+111_9,0,train,2,Drop,Drive -> Drop,0.4667,-0.0069,-0.0069
+111_9,0,train,3,Lift,Drive -> Drop -> Lift,0.4602,-0.0065,-0.0133
+111_9,0,train,4,Smash,Drive -> Drop -> Lift -> Smash,0.4564,-0.0039,-0.0172
+111_9,0,train,5,Out,Drive -> Drop -> Lift -> Smash -> Out,0.471,0.0147,-0.0025
+111_10,0,test,1,Drop,Drop,0.4822,0.0,0.0
+111_10,0,test,2,Drop,Drop -> Drop,0.4723,-0.0099,-0.0099
+111_10,0,test,3,Drop,Drop -> Drop -> Drop,0.4663,-0.006,-0.0159
+111_10,0,test,4,Serve,Drop -> Drop -> Drop -> Serve,0.4579,-0.0084,-0.0243
+111_10,0,test,5,Lift,Drop -> Drop -> Drop -> Serve -> Lift,0.455,-0.0029,-0.0272
+111_10,0,test,6,Drop,Drop -> Drop -> Drop -> Serve -> Lift -> Drop,0.457,0.0021,-0.0252
+111_10,0,test,7,Clear,Drop -> Drop -> Drop -> Serve -> Lift -> Drop -> Clear,0.4679,0.0108,-0.0143
+111_10,0,test,8,Drop,Drop -> Drop -> Drop -> Serve -> Lift -> Drop -> Clear -> Drop,0.4712,0.0034,-0.011
+111_10,0,test,9,Lift,Drop -> Drop -> Drop -> Serve -> Lift -> Drop -> Clear -> Drop -> Lift,0.4737,0.0024,-0.0085
+111_10,0,test,10,Lift,Drop -> Drop -> Drop -> Serve -> Lift -> Drop -> Clear -> Drop -> Lift -> Lift,0.4773,0.0036,-0.0049
+111_10,0,test,11,Drop,Drop -> Drop -> Drop -> Serve -> Lift -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop,0.4828,0.0055,0.0006
+111_10,0,test,12,Clear,Drop -> Drop -> Drop -> Serve -> Lift -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Clear,0.4872,0.0044,0.005
+111_10,0,test,13,Fall,Drop -> Drop -> Drop -> Serve -> Lift -> Drop -> Clear -> Drop -> Lift -> Lift -> Drop -> Clear -> Fall,0.4978,0.0107,0.0156

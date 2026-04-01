@@ -1,0 +1,15 @@
+{
+  "input_file": "final_corrected_input.csv",
+  "train_rows": 45,
+  "test_rows": 16,
+  "vocab_size": 16,
+  "max_sequence_length": 61,
+  "train_positive_rate": 0.5333,
+  "test_positive_rate": 0.5625,
+  "test_loss": 0.6943,
+  "test_accuracy": 0.5625,
+  "test_roc_auc": 0.0952,
+  "best_val_accuracy": 0.3333,
+  "best_val_auc": 0.8333,
+  "epochs_ran": 7
+}

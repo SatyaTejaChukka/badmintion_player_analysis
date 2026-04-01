@@ -1,0 +1,16 @@
+pattern_size,pattern,count,rally_count,win_rate,avg_predicted_win_probability,avg_attention_weight,rally_support_pct
+2,Long Defence -> Fall,2,2,1.0,0.5119,0.3539,0.0328
+2,Drive -> Lift,2,2,0.0,0.4968,0.2945,0.0328
+3,Drive -> Lift -> Miss,2,2,0.0,0.4968,0.291,0.0328
+2,Clear -> Fall,6,6,0.6667,0.5063,0.2459,0.0984
+2,Drive -> Drop,2,2,0.0,0.4983,0.203,0.0328
+2,Lift -> Drop,2,2,1.0,0.4992,0.2011,0.0328
+2,Lift -> Fall,3,3,0.6667,0.4993,0.2004,0.0492
+3,Serve -> Lift -> Drop,2,2,0.0,0.4957,0.1847,0.0328
+3,Drop -> Clear -> Fall,2,2,1.0,0.5005,0.1835,0.0328
+3,Clear -> Lift -> Fall,2,2,0.5,0.5048,0.175,0.0328
+2,Serve -> Lift,3,3,0.0,0.4959,0.175,0.0492
+2,Clear -> Lift,2,2,0.5,0.5048,0.1711,0.0328
+2,Net Shot -> Lift,3,3,0.6667,0.507,0.1614,0.0492
+2,Drop -> Net,2,2,0.0,0.4961,0.1541,0.0328
+3,Lift -> Drop -> Net,2,2,0.0,0.4961,0.153,0.0328

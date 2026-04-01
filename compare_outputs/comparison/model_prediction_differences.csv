@@ -1,0 +1,17 @@
+RallyId,ShotTypes,Player1Won,predicted_probability_lstm,predicted_probability_bilstm,probability_delta,abs_probability_delta,predicted_label_lstm,predicted_label_bilstm,label_changed,lstm_correct,bilstm_correct,comparison_outcome
+26_6,"Backhand Serve, Net Shot, Lift, Fall",1.0,0.5103,0.5908,0.0805,0.0805,1,1,False,True,True,both_correct
+26_5,"Lift, Short Defence, Drop, Lift, Fall",1.0,0.5014,0.5757,0.0743,0.0743,1,1,False,True,True,both_correct
+5_7,"Serve, Drive, Lift, Miss",0.0,0.4951,0.4417,-0.0534,0.0534,0,0,False,True,True,both_correct
+5_8,"Lift, Drive, Drop, Drive, Miss",0.0,0.4976,0.4538,-0.0438,0.0438,0,0,False,True,True,both_correct
+27_11,"Smash, Drive, Long Defence, Clear, Fall",0.0,0.5113,0.5478,0.0365,0.0365,1,1,False,False,False,both_wrong
+8_10,"Drop, Drive, Lift, Clear, Lift, Smash, Smash, Drop, Net",0.0,0.5001,0.4659,-0.0342,0.0342,1,0,True,False,True,bilstm_only_correct
+85_2,"Net Shot, Smash, Net Shot, Lift, Net Shot, Drop, Lift, Lift, Net",1.0,0.5042,0.5329,0.0287,0.0287,1,1,False,True,True,both_correct
+29_4,"Serve, Drop, Lift, Smash, Lift, Clear, Clear, Drive, Clear, Drive, Net",0.0,0.5009,0.4725,-0.0284,0.0284,1,0,True,False,True,bilstm_only_correct
+85_5,"Lift, Net Shot, Smash, Lift, Long Defence, Long Defence, Net Shot, Clear, Long Defence, Net",1.0,0.5104,0.5375,0.0271,0.0271,1,1,False,True,True,both_correct
+111_1,"Serve, Smash, Drop, Drive, Clear, Clear, Drive, Lift, Drop, Drive, Drive, Lift, Drop, Net",0.0,0.5001,0.4842,-0.0159,0.0159,1,0,True,False,True,bilstm_only_correct
+27_8,"Lift, Drive, Lift, Lift, Drive, Lift, Drive, Clear, Fall",1.0,0.4992,0.4841,-0.0151,0.0151,0,0,False,False,False,both_wrong
+8_17,"Lift, Drive, Drop, Drop, Drop, Clear, Drop, Lift, Lift, Fall",1.0,0.5002,0.4915,-0.0087,0.0087,1,0,True,True,False,lstm_only_correct
+26_7,"Drive, Drive, Lift, Long Defence, Fall",1.0,0.5026,0.5098,0.0072,0.0072,1,1,False,True,True,both_correct
+27_9,"Net Shot, Lift, Long Defence, Lift, Lift, Lift, Lift, Long Defence, Smash, Net Shot, Clear, Net Shot, Smash, Lift, Net",1.0,0.5042,0.5114,0.0072,0.0072,1,1,False,True,True,both_correct
+111_10,"Drop, Drop, Drop, Serve, Lift, Drop, Clear, Drop, Lift, Lift, Drop, Clear, Fall",0.0,0.5013,0.4978,-0.0035,0.0035,1,0,True,False,True,bilstm_only_correct
+85_1,"Serve, Lift, Lift, Clear, Serve, Drive, Net Kill, Clear, Lift, Fall",1.0,0.4992,0.4971,-0.0021,0.0021,0,0,False,False,False,both_wrong

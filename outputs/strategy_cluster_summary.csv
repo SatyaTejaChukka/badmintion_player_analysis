@@ -1,0 +1,4 @@
+strategy_cluster,rallies,wins,avg_attack_ratio,avg_defense_ratio,avg_neutral_ratio,avg_sequence_model_probability,win_rate,strategy_cluster_name
+0,23,17.0,0.1726,0.41,0.2189,0.553,0.7391,Defensive
+1,21,11.0,0.2272,0.3547,0.3735,0.499,0.5238,Aggressive
+2,17,5.0,0.1954,0.3666,0.3295,0.4692,0.2941,Balanced

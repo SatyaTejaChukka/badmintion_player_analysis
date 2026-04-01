@@ -349,13 +349,33 @@ def render_analyzer(bundle) -> None:
     st.caption("Enter a comma-separated rally to classify each shot, estimate the win chance, and get a tactical recommendation.")
 
     default_sequence = "Serve, Lift, Drop, Smash"
-    sequence_text = st.text_area("Shot sequence", value=default_sequence, height=100)
+    input_key = "rally_analyzer_sequence_text"
+    result_key = "rally_analyzer_result"
+    source_key = "rally_analyzer_result_input"
 
-    if not sequence_text.strip():
-        st.info("Enter at least one shot to analyze.")
+    if st.session_state.get(source_key) != bundle.input_path.name:
+        st.session_state.pop(result_key, None)
+        st.session_state[source_key] = bundle.input_path.name
+
+    if input_key not in st.session_state:
+        st.session_state[input_key] = default_sequence
+
+    with st.form("rally_analyzer_form"):
+        st.text_area("Shot sequence", key=input_key, height=100)
+        submitted = st.form_submit_button("Analyze Rally", type="primary")
+
+    if submitted:
+        sequence_text = st.session_state[input_key]
+        if sequence_text.strip():
+            st.session_state[result_key] = analyze_user_sequence(sequence_text, bundle)
+        else:
+            st.session_state.pop(result_key, None)
+
+    result = st.session_state.get(result_key)
+    if result is None:
+        st.info("Enter a comma-separated rally and click `Analyze Rally`.")
         return
 
-    result = analyze_user_sequence(sequence_text, bundle)
     if not result["shots"]:
         st.warning("The sequence could not be parsed. Use comma-separated shot names such as `Serve, Lift, Drop, Smash`.")
         return

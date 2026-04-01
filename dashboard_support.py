@@ -425,7 +425,7 @@ def analyze_user_sequence(sequence_text: str, bundle: DashboardBundle) -> dict[s
         bundle.shot_pattern_df,
         exclude_values=None,
     )
-    what_if_df = suggest_candidate_shots(shots, bundle)
+    what_if_df = pd.DataFrame()
     strategy = assign_strategy_bucket_from_labels(analysis["labels"])
     sequence_result = None
 

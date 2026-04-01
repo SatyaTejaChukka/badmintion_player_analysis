@@ -350,6 +350,66 @@ def load_sequence_intelligence_artifacts(output_dir: Path = Path("outputs")) -> 
     )
 
 
+def _build_sequence_intelligence_result(
+    shots: list[str],
+    shot_to_id: dict[str, int],
+    metadata: dict[str, Any],
+    raw_probability: float,
+    calibrated_probability: float,
+    attention_row: np.ndarray,
+    context_vector: np.ndarray,
+    next_shot_distribution_row: np.ndarray | None,
+    strategy_cluster_id: int | None,
+    strategy_cluster_name: str | None,
+) -> dict[str, Any]:
+    max_sequence_length = int(metadata["max_sequence_length"])
+    actual_length = min(len(shots), max_sequence_length)
+    weights = np.asarray(attention_row[:actual_length], dtype=float).tolist()
+    context = np.asarray(context_vector, dtype=float).tolist()
+
+    next_shot_probability_df = build_next_shot_probability_table(
+        next_shot_distribution=next_shot_distribution_row,
+        shot_to_id=shot_to_id,
+        candidate_shots=metadata.get("candidate_shots"),
+    )
+    next_shot_probability_map = (
+        dict(zip(next_shot_probability_df["candidate_shot"], next_shot_probability_df["next_shot_probability"]))
+        if not next_shot_probability_df.empty
+        else {}
+    )
+
+    shot_rows = []
+    for index, (shot, weight) in enumerate(zip(shots[:actual_length], weights), start=1):
+        shot_rows.append(
+            {
+                "position": index,
+                "shot": shot,
+                "attention_weight": round(float(weight), 4),
+            }
+        )
+    if shot_rows:
+        shot_importance_df = pd.DataFrame(shot_rows).sort_values(
+            by=["attention_weight", "position"], ascending=[False, True]
+        )
+    else:
+        shot_importance_df = pd.DataFrame(columns=["position", "shot", "attention_weight"])
+
+    unknown_shots = [shot for shot in shots if shot not in shot_to_id]
+
+    return {
+        "win_probability": float(calibrated_probability),
+        "raw_win_probability": float(raw_probability),
+        "attention_weights": weights,
+        "context_embedding": context,
+        "shot_importance_df": shot_importance_df,
+        "strategy_cluster_id": strategy_cluster_id,
+        "strategy_cluster_name": strategy_cluster_name,
+        "unknown_shots": unknown_shots,
+        "next_shot_probability_df": next_shot_probability_df,
+        "next_shot_probability_map": next_shot_probability_map,
+    }
+
+
 def build_next_shot_probability_table(
     next_shot_distribution: np.ndarray | None,
     shot_to_id: dict[str, int],
@@ -438,67 +498,64 @@ def predict_sequence_intelligence(
     shots: list[str],
     artifacts: SequenceIntelligenceArtifacts,
 ) -> dict[str, Any]:
+    return predict_sequence_intelligence_batch([shots], artifacts)[0]
+
+
+def predict_sequence_intelligence_batch(
+    sequences: list[list[str]],
+    artifacts: SequenceIntelligenceArtifacts,
+) -> list[dict[str, Any]]:
+    if not sequences:
+        return []
+
     shot_to_id = artifacts.metadata["shot_to_id"]
     max_sequence_length = int(artifacts.metadata["max_sequence_length"])
-    sequence_input = encode_single_sequence(shots, shot_to_id, max_sequence_length)
-    prediction, attention_weights, context_vector, next_shot_distribution = unpack_model_outputs(
-        artifacts.model.predict(sequence_input, verbose=0)
+    encoded_sequences = encode_sequences(sequences, shot_to_id)
+    sequence_inputs = pad_encoded_sequences(encoded_sequences, max_length=max_sequence_length)
+    predictions, attention_weights, context_vectors, next_shot_distributions = unpack_model_outputs(
+        artifacts.model.predict(sequence_inputs, verbose=0)
     )
 
-    actual_length = min(len(shots), max_sequence_length)
-    raw_probability = float(np.squeeze(prediction))
-    probability = float(np.squeeze(calibrate_win_probabilities(raw_probability, artifacts.metadata)))
-    weights = attention_weights[0][:actual_length].astype(float).tolist()
-    context = context_vector[0].astype(float).tolist()
-    next_shot_distribution_row = None if next_shot_distribution is None else next_shot_distribution[0].astype(float)
-    next_shot_probability_df = build_next_shot_probability_table(
-        next_shot_distribution=next_shot_distribution_row,
-        shot_to_id=shot_to_id,
-        candidate_shots=artifacts.metadata.get("candidate_shots"),
-    )
-    next_shot_probability_map = (
-        dict(zip(next_shot_probability_df["candidate_shot"], next_shot_probability_df["next_shot_probability"]))
-        if not next_shot_probability_df.empty
-        else {}
-    )
+    raw_probabilities = np.asarray(predictions, dtype=float).reshape(-1)
+    calibrated_probabilities = np.asarray(
+        calibrate_win_probabilities(raw_probabilities, artifacts.metadata),
+        dtype=float,
+    ).reshape(-1)
 
-    shot_rows = []
-    for index, (shot, weight) in enumerate(zip(shots[:actual_length], weights), start=1):
-        shot_rows.append(
-            {
-                "position": index,
-                "shot": shot,
-                "attention_weight": round(float(weight), 4),
-            }
-        )
-    if shot_rows:
-        shot_importance_df = pd.DataFrame(shot_rows).sort_values(
-            by=["attention_weight", "position"], ascending=[False, True]
-        )
-    else:
-        shot_importance_df = pd.DataFrame(columns=["position", "shot", "attention_weight"])
-
-    strategy_cluster_id = None
-    strategy_cluster_name = None
+    strategy_cluster_ids: list[int | None] = [None] * len(sequences)
+    strategy_cluster_names: list[str | None] = [None] * len(sequences)
     if artifacts.cluster_model is not None:
-        strategy_cluster_id = int(artifacts.cluster_model.predict(np.asarray([context], dtype=np.float64))[0])
         cluster_name_map = artifacts.metadata.get("cluster_name_map", {})
-        strategy_cluster_name = cluster_name_map.get(str(strategy_cluster_id), f"Cluster {strategy_cluster_id}")
+        cluster_ids = artifacts.cluster_model.predict(np.asarray(context_vectors, dtype=np.float64))
+        strategy_cluster_ids = [int(cluster_id) for cluster_id in cluster_ids]
+        strategy_cluster_names = [
+            cluster_name_map.get(str(cluster_id), f"Cluster {cluster_id}")
+            for cluster_id in strategy_cluster_ids
+        ]
 
-    unknown_shots = [shot for shot in shots if shot not in shot_to_id]
+    results: list[dict[str, Any]] = []
+    for index, shots in enumerate(sequences):
+        next_shot_distribution_row = (
+            None
+            if next_shot_distributions is None
+            else np.asarray(next_shot_distributions[index], dtype=float)
+        )
+        results.append(
+            _build_sequence_intelligence_result(
+                shots=shots,
+                shot_to_id=shot_to_id,
+                metadata=artifacts.metadata,
+                raw_probability=float(raw_probabilities[index]),
+                calibrated_probability=float(calibrated_probabilities[index]),
+                attention_row=np.asarray(attention_weights[index], dtype=float),
+                context_vector=np.asarray(context_vectors[index], dtype=float),
+                next_shot_distribution_row=next_shot_distribution_row,
+                strategy_cluster_id=strategy_cluster_ids[index],
+                strategy_cluster_name=strategy_cluster_names[index],
+            )
+        )
 
-    return {
-        "win_probability": probability,
-        "raw_win_probability": raw_probability,
-        "attention_weights": weights,
-        "context_embedding": context,
-        "shot_importance_df": shot_importance_df,
-        "strategy_cluster_id": strategy_cluster_id,
-        "strategy_cluster_name": strategy_cluster_name,
-        "unknown_shots": unknown_shots,
-        "next_shot_probability_df": next_shot_probability_df,
-        "next_shot_probability_map": next_shot_probability_map,
-    }
+    return results
 
 
 def predict_prefix_probability_trajectory(
@@ -853,23 +910,22 @@ def simulate_shot_replacements(
 
     baseline_result = predict_sequence_intelligence(shots, artifacts)
     baseline_probability = baseline_result["win_probability"]
-    prefix_probability_cache: dict[int, dict[str, float]] = {}
+    prefix_results = predict_sequence_intelligence_batch(
+        [shots[:index] for index in range(len(shots))],
+        artifacts,
+    )
 
-    rows = []
+    simulation_rows: list[dict[str, Any]] = []
+    simulated_sequences: list[list[str]] = []
     for index, original_shot in enumerate(shots):
-        prefix_result = None
-        if index not in prefix_probability_cache:
-            prefix_result = predict_sequence_intelligence(shots[:index], artifacts)
-            prefix_probability_cache[index] = prefix_result.get("next_shot_probability_map", {})
-        next_shot_probability_map = prefix_probability_cache[index]
+        prefix_result = prefix_results[index]
+        next_shot_probability_map = prefix_result.get("next_shot_probability_map", {})
         resolved_candidates = None
         if candidate_shots_by_position is not None:
             resolved_candidates = candidate_shots_by_position.get(index + 1)
         if resolved_candidates is None:
             resolved_candidates = candidate_shots
         if resolved_candidates is None:
-            if prefix_result is None:
-                prefix_result = predict_sequence_intelligence(shots[:index], artifacts)
             resolved_candidates = generate_context_aware_candidate_shots(
                 shots=shots[:index],
                 artifacts=artifacts,
@@ -881,20 +937,42 @@ def simulate_shot_replacements(
                 continue
             simulated = shots[:]
             simulated[index] = candidate_shot
-            simulated_result = predict_sequence_intelligence(simulated, artifacts)
-            probability = simulated_result["win_probability"]
-            candidate_plausibility = float(next_shot_probability_map.get(candidate_shot, 0.0))
-            rows.append(
+            simulated_sequences.append(simulated)
+            simulation_rows.append(
                 {
                     "position": index + 1,
                     "original_shot": original_shot,
                     "candidate_shot": candidate_shot,
-                    "predicted_win_probability": round(probability, 4),
-                    "delta_vs_current": round(probability - baseline_probability, 4),
-                    "candidate_shot_plausibility": round(candidate_plausibility, 4),
-                    "replacement_score": round(probability * candidate_plausibility, 4),
+                    "candidate_shot_plausibility": round(float(next_shot_probability_map.get(candidate_shot, 0.0)), 4),
                 }
             )
+
+    if not simulation_rows:
+        return pd.DataFrame(
+            columns=[
+                "position",
+                "original_shot",
+                "candidate_shot",
+                "predicted_win_probability",
+                "delta_vs_current",
+                "candidate_shot_plausibility",
+                "replacement_score",
+            ]
+        )
+
+    simulated_results = predict_sequence_intelligence_batch(simulated_sequences, artifacts)
+    rows = []
+    for row, simulated_result in zip(simulation_rows, simulated_results):
+        probability = float(simulated_result["win_probability"])
+        candidate_plausibility = float(row["candidate_shot_plausibility"])
+        rows.append(
+            {
+                **row,
+                "predicted_win_probability": round(probability, 4),
+                "delta_vs_current": round(probability - baseline_probability, 4),
+                "replacement_score": round(probability * candidate_plausibility, 4),
+            }
+        )
 
     return pd.DataFrame(rows).sort_values(
         by=["replacement_score", "delta_vs_current", "predicted_win_probability"],
@@ -917,10 +995,24 @@ def simulate_next_shot_candidates(
         base_result=baseline_result,
     )
 
+    if not resolved_candidate_shots:
+        return pd.DataFrame(
+            columns=[
+                "candidate_shot",
+                "predicted_win_probability",
+                "delta_vs_current",
+                "next_shot_probability",
+                "recommendation_score",
+            ]
+        )
+
+    simulated_results = predict_sequence_intelligence_batch(
+        [shots + [candidate_shot] for candidate_shot in resolved_candidate_shots],
+        artifacts,
+    )
     rows = []
-    for candidate_shot in resolved_candidate_shots:
-        simulated_result = predict_sequence_intelligence(shots + [candidate_shot], artifacts)
-        probability = simulated_result["win_probability"]
+    for candidate_shot, simulated_result in zip(resolved_candidate_shots, simulated_results):
+        probability = float(simulated_result["win_probability"])
         next_shot_probability = float(next_shot_probability_map.get(candidate_shot, 0.0))
         rows.append(
             {
